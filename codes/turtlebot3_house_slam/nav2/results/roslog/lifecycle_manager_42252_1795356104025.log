@@ -1,0 +1,20 @@
+[INFO] [1795356104.381068442] [lifecycle_manager_dwa]: Creating
+[INFO] [1795356104.382860193] [lifecycle_manager_dwa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1795356104.386101186] [lifecycle_manager_dwa]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1795356104.386142047] [lifecycle_manager_dwa]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1795356104.397823628] [lifecycle_manager_dwa]: [34m[1mConfiguring amcl[0m[0m
+[INFO] [1795356104.406388975] [lifecycle_manager_dwa]: [34m[1mConfiguring planner_server[0m[0m
+[INFO] [1795356104.423864361] [lifecycle_manager_dwa]: [34m[1mConfiguring controller_server[0m[0m
+[INFO] [1795356104.452124241] [lifecycle_manager_dwa]: [34m[1mActivating map_server[0m[0m
+[INFO] [1795356104.555844907] [lifecycle_manager_dwa]: Server map_server connected with bond.
+[INFO] [1795356104.555944960] [lifecycle_manager_dwa]: [34m[1mActivating amcl[0m[0m
+[INFO] [1795356104.660292300] [lifecycle_manager_dwa]: Server amcl connected with bond.
+[INFO] [1795356104.660337127] [lifecycle_manager_dwa]: [34m[1mActivating planner_server[0m[0m
+[INFO] [1795356107.813619513] [lifecycle_manager_dwa]: Server planner_server connected with bond.
+[INFO] [1795356107.813659981] [lifecycle_manager_dwa]: [34m[1mActivating controller_server[0m[0m
+[INFO] [1795356108.170093850] [lifecycle_manager_dwa]: Server controller_server connected with bond.
+[INFO] [1795356108.170168773] [lifecycle_manager_dwa]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1795356108.170175227] [lifecycle_manager_dwa]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1795356166.736693964] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795356166.736782097] [lifecycle_manager_dwa]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_dwa)
+[INFO] [1795356166.736811410] [lifecycle_manager_dwa]: [34m[1mTerminating bond timer...[0m[0m

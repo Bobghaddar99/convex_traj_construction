@@ -1,0 +1,3 @@
+gazebo is isolated from the GPU
+/home/ibrahim/Desktop/convex/turtlebot3_house_slam/tools/map_house.sh: line 19:  7796 Aborted                 setsid timeout 2700 /usr/bin/python3 "$P/tools/drive_route.py" "$R" > "$R/drive.log" 2>&1
+STOPPED

@@ -1,0 +1,8 @@
+{'map_set': 'presentation', 'method': 'baseline', 'maps': 6, 'success': 3, 'reached_goal': 3, 'collided': 1, 'left_map': 3, 'median_time_s': 57.9, 'v_max': 2.0, 'accel_max': 0.5}
+{'map_set': 'presentation', 'method': 'baseline_otpwr_limits', 'maps': 6, 'success': 2, 'reached_goal': 2, 'collided': 0, 'left_map': 4, 'median_time_s': 63.9, 'v_max': 0.48, 'accel_max': 0.2}
+{'map_set': 'presentation', 'method': 'improved', 'maps': 6, 'success': 6, 'reached_goal': 6, 'collided': 0, 'left_map': 0, 'median_time_s': 46.5, 'v_max': 0.5, 'accel_max': 0.2}
+  maps solved by both: 3, median 57.9 s -> 41.7 s
+{'map_set': 'test', 'method': 'baseline', 'maps': 100, 'success': 16, 'reached_goal': 17, 'collided': 14, 'left_map': 80, 'median_time_s': 63.7, 'v_max': 2.0, 'accel_max': 0.5}
+{'map_set': 'test', 'method': 'baseline_otpwr_limits', 'maps': 100, 'success': 15, 'reached_goal': 16, 'collided': 38, 'left_map': 80, 'median_time_s': 66.4, 'v_max': 0.48, 'accel_max': 0.2}
+{'map_set': 'test', 'method': 'improved', 'maps': 100, 'success': 100, 'reached_goal': 100, 'collided': 0, 'left_map': 0, 'median_time_s': 53.8, 'v_max': 0.5, 'accel_max': 0.2}
+  maps solved by both: 16, median 63.7 s -> 44.1 s

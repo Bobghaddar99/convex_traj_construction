@@ -1,0 +1,6 @@
+{
+  "sim_time": 2.0,
+  "PathAlign.forward_point_distance": 0.325,
+  "GoalAlign.forward_point_distance": 0.325,
+  "BaseObstacle.scale": 0.05
+}

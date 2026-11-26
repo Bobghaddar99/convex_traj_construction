@@ -1,0 +1,27 @@
+[INFO] [1795355782.902626657] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795355782.903082564] [amcl]: Creating
+[INFO] [1795355790.574895661] [amcl]: Configuring
+[INFO] [1795355790.574979647] [amcl]: initTransforms
+[INFO] [1795355790.579599772] [amcl]: initPubSub
+[INFO] [1795355790.581612277] [amcl]: Subscribed to map topic.
+[INFO] [1795355790.629867702] [amcl]: Received a 300 X 214 map @ 0.050 m/pix
+[INFO] [1795355790.731593239] [amcl]: Activating
+[INFO] [1795355790.731624969] [amcl]: initialPoseReceived
+[INFO] [1795355790.731704038] [amcl]: Setting pose (218.455000): 0.000 0.000 0.000
+[INFO] [1795355790.731970033] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1795355791.105012170] [amcl]: createLaserObject
+[INFO] [1795355803.257528197] [amcl]: initialPoseReceived
+[WARN] [1795355803.257625583] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 224.661000 but the latest data is at time 224.660000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795355803.257638924] [amcl]: Setting pose (224.661000): 0.000 0.000 0.000
+[INFO] [1795355831.241525613] [amcl]: initialPoseReceived
+[WARN] [1795355831.241593548] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 238.561000 but the latest data is at time 238.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795355831.241601351] [amcl]: Setting pose (238.561000): 0.000 0.000 0.000
+[INFO] [1795355854.361644206] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795355854.361678664] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1795355854.361803657] [amcl]: Deactivating
+[INFO] [1795355854.361830111] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1795355854.372050915] [amcl]: Cleaning up
+[INFO] [1795355854.374843333] [amcl]: Destroying bond (amcl) to lifecycle manager.

@@ -1,0 +1,53 @@
+goal 1/54 ok=True sim=31s odom_err=0.022 slam_err=0.019
+goal 2/54 ok=True sim=43s odom_err=0.017 slam_err=0.018
+goal 3/54 ok=True sim=53s odom_err=0.013 slam_err=0.019
+goal 4/54 ok=True sim=69s odom_err=0.012 slam_err=0.084
+goal 5/54 ok=True sim=80s odom_err=0.021 slam_err=0.160
+goal 6/54 ok=True sim=93s odom_err=0.027 slam_err=0.203
+goal 7/54 ok=True sim=102s odom_err=0.017 slam_err=0.247
+goal 8/54 ok=True sim=114s odom_err=0.023 slam_err=0.314
+goal 9/54 ok=True sim=120s odom_err=0.022 slam_err=0.344
+goal 10/54 ok=True sim=126s odom_err=0.006 slam_err=0.335
+goal 11/54 ok=True sim=141s odom_err=0.020 slam_err=0.515
+goal 12/54 ok=True sim=150s odom_err=0.021 slam_err=0.420
+goal 13/54 ok=True sim=161s odom_err=0.022 slam_err=0.337
+goal 14/54 ok=True sim=167s odom_err=0.034 slam_err=0.301
+goal 15/54 ok=True sim=180s odom_err=0.016 slam_err=0.369
+goal 16/54 ok=True sim=189s odom_err=0.034 slam_err=0.405
+goal 17/54 ok=True sim=199s odom_err=0.020 slam_err=0.523
+goal 18/54 ok=True sim=212s odom_err=0.037 slam_err=0.521
+goal 19/54 ok=True sim=218s odom_err=0.035 slam_err=0.524
+goal 20/54 ok=True sim=229s odom_err=0.038 slam_err=0.503
+goal 21/54 ok=True sim=242s odom_err=0.047 slam_err=0.441
+goal 22/54 ok=True sim=253s odom_err=0.031 slam_err=0.408
+goal 23/54 ok=True sim=265s odom_err=0.050 slam_err=0.311
+goal 24/54 ok=True sim=275s odom_err=0.050 slam_err=0.294
+goal 25/54 ok=True sim=286s odom_err=0.043 slam_err=0.266
+goal 26/54 ok=True sim=299s odom_err=0.043 slam_err=0.367
+goal 27/54 ok=True sim=309s odom_err=0.053 slam_err=0.378
+goal 28/54 ok=True sim=318s odom_err=0.053 slam_err=0.311
+goal 29/54 ok=True sim=327s odom_err=0.063 slam_err=0.303
+goal 30/54 ok=True sim=334s odom_err=0.065 slam_err=0.363
+goal 31/54 ok=True sim=346s odom_err=0.056 slam_err=0.414
+goal 32/54 ok=True sim=356s odom_err=0.051 slam_err=0.397
+goal 33/54 ok=True sim=367s odom_err=0.064 slam_err=0.412
+goal 34/54 ok=True sim=377s odom_err=0.058 slam_err=0.493
+goal 35/54 ok=True sim=384s odom_err=0.043 slam_err=0.527
+goal 36/54 ok=True sim=395s odom_err=0.047 slam_err=0.467
+goal 37/54 ok=True sim=402s odom_err=0.027 slam_err=0.481
+goal 38/54 ok=True sim=411s odom_err=0.029 slam_err=0.458
+goal 39/54 ok=True sim=421s odom_err=0.036 slam_err=0.377
+goal 40/54 ok=True sim=428s odom_err=0.045 slam_err=0.281
+Traceback (most recent call last):
+  File "/home/ibrahim/Desktop/convex/turtlebot3_house_slam/tools/drive_route.py", line 93, in <module>
+    time.sleep(.033)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ibrahim/Desktop/convex/turtlebot3_house_slam/tools/drive_route.py", line 119, in <module>
+    end = time.time() + 4
+KeyboardInterrupt
+terminate called without an active exception
+timeout: the monitored command dumped core

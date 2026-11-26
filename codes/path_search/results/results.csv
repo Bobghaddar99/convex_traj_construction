@@ -1,0 +1,9 @@
+map,seed,algorithm,path_length_m,search_time_s,expanded_nodes
+1,1,Dijkstra (Reference),13.8995,0.000197,72
+1,1,Euclidean Distance,13.8995,0.000125,33
+1,1,Manhattan Distance,13.8995,0.000055,12
+1,1,Diagonal Distance,13.8995,0.000080,20
+2,30,Dijkstra (Reference),14.4853,0.000231,79
+2,30,Euclidean Distance,14.4853,0.000134,34
+2,30,Manhattan Distance,15.6569,0.000106,28
+2,30,Diagonal Distance,14.4853,0.000092,24

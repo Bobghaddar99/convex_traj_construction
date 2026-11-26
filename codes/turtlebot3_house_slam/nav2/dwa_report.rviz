@@ -1,0 +1,80 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: SLAM map
+      Alpha: 1
+      Enabled: true
+      Value: true
+      Topic: {Value: /map, Durability Policy: Transient Local, Reliability Policy: Reliable, History Policy: Keep Last, Depth: 1}
+    - Class: rviz_default_plugins/LaserScan
+      Name: Lidar
+      Enabled: true
+      Value: true
+      Size (m): 0.04
+      Style: Flat Squares
+      Color Transformer: FlatColor
+      Color: 255; 40; 40
+      Topic: {Value: /scan, Reliability Policy: Best Effort}
+    - Class: rviz_default_plugins/Path
+      Name: Diagonal A* path
+      Enabled: true
+      Value: true
+      Color: 42; 120; 214
+      Line Style: Billboards
+      Line Width: 0.04
+      Topic: {Value: /plan}
+    - Class: rviz_default_plugins/Path
+      Name: Driven trail
+      Enabled: true
+      Value: true
+      Color: 27; 175; 122
+      Line Style: Billboards
+      Line Width: 0.07
+      Topic: {Value: /dwa_trail}
+    - Class: rviz_default_plugins/Path
+      Name: DWA chosen arc
+      Enabled: true
+      Value: true
+      Color: 235; 104; 52
+      Line Style: Billboards
+      Line Width: 0.07
+      Topic: {Value: /local_plan}
+    - Class: rviz_default_plugins/PoseArray
+      Name: A* waypoints
+      Enabled: true
+      Value: true
+      Shape: Axes
+      Axes Length: 0.07
+      Axes Radius: 0.025
+      Topic: {Value: /astar_waypoints}
+    - Class: rviz_default_plugins/Axes
+      Name: Robot
+      Enabled: true
+      Value: true
+      Reference Frame: base_footprint
+      Length: 0.35
+      Radius: 0.06
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Angle: 0
+      Scale: 72
+      X: 1.97
+      Y: -1.1
+Window Geometry:
+  Hide Left Dock: true
+  Hide Right Dock: true
+  X: 40
+  Y: 50
+  Width: 1400
+  Height: 950

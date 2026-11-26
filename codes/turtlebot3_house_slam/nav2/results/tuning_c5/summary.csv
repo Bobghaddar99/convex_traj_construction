@@ -1,0 +1,3 @@
+setting,goal,result,time_s,rtf,end_to_goal_m,cmd_v_max,cmd_w_max,closest_lidar_m
+tuning_c5,T1_north_west_room,controller aborted,10.0,0.497,4.64,0.0,0.178,1.016
+tuning_c5,T2_east_room,reached,13.2,0.497,0.25,1.06,0.284,0.227

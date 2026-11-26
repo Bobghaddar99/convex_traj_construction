@@ -1,0 +1,8 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1795349986.503010223] [rosbag2_storage]: Opened database '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/bag/bag_0.db3' for READ_ONLY.
+[INFO] [1795349986.503056922] [rosbag2_player]: Set rate to 4
+[INFO] [1795349986.507048633] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1795349986.507081380] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1795349986.507088408] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1795349986.507093612] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1795349986.507098722] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1795349986.507349136] [rosbag2_storage]: Opened database '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/bag/bag_0.db3' for READ_ONLY.

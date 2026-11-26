@@ -1,0 +1,13 @@
+[INFO] [1795356652.627645172] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795356652.627721982] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1795356652.681943195] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795356652.910175906] [rviz2]: Trying to create a map of size 300 x 214 using 1 swatches
+[ERROR] [1795356652.912234996] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1795356672.485330650] [rviz]: Message Filter dropping message: frame 'odom' at time 646.040 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795356673.665276011] [rviz]: Message Filter dropping message: frame 'base_scan' at time 645.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795356677.789496782] [rviz2]: Trying to create a map of size 280 x 280 using 1 swatches
+[INFO] [1795356685.024341671] [rviz2]: Trying to create a map of size 280 x 280 using 1 swatches
+[INFO] [1795356687.635621952] [rviz2]: Trying to create a map of size 300 x 214 using 1 swatches
+[INFO] [1795356723.212270373] [rviz]: Message Filter dropping message: frame 'base_scan' at time 677.800 for reason 'discarding message because the queue is full'
+[INFO] [1795356865.066241332] [rviz]: Message Filter dropping message: frame 'base_scan' at time 746.800 for reason 'discarding message because the queue is full'

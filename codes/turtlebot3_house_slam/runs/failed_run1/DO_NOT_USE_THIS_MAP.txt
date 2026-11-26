@@ -1,0 +1,4 @@
+turtlebot3_house.pgm / .yaml are from the first, FAILED SLAM run (22 Nov 2026, 13:33).
+Two false loop closures moved the estimated pose by up to 4 m, so walls are doubled
+and rooms are ghosted. Do not plan on this map or use it in results.
+Replace both files with a new mapping run, then delete this note.

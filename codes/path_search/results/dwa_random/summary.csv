@@ -1,0 +1,7 @@
+map,seed,waypoints_reached,waypoints_total,goal_reached,time_s,astar_length_m,dwa_length_m,entered_obstacle_cell,steps_in_obstacle_cell,steps_within_R,min_centre_distance_m,left_map,v_mean,v_max,w_abs_max,accel_abs_max
+1,1,11,11,True,57.9,13.8995,13.495,False,0,0,0.997,False,0.233,0.51,0.35,0.5
+2,30,12,12,True,63.7,14.4853,14.078,False,0,0,0.95,False,0.221,0.51,0.35,0.5
+3,2,11,11,True,53.2,13.8995,13.961,False,0,0,1.0,False,0.262,0.81,0.35,0.5
+4,3,8,13,False,500.0,15.0711,897.195,False,0,0,0.959,True,1.794,2.0,0.35,0.5
+5,4,4,13,False,500.0,15.0711,883.67,True,4,0,0.58,True,1.767,2.0,0.35,0.5
+6,5,6,16,False,500.0,16.8284,881.469,False,0,0,0.706,True,1.763,2.0,0.35,0.5

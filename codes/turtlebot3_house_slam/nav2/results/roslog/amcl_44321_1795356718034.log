@@ -1,0 +1,30 @@
+[INFO] [1795356718.062118859] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795356718.062560902] [amcl]: Creating
+[INFO] [1795356727.062276368] [amcl]: Configuring
+[INFO] [1795356727.062376500] [amcl]: initTransforms
+[INFO] [1795356727.070235415] [amcl]: initPubSub
+[INFO] [1795356727.075078306] [amcl]: Subscribed to map topic.
+[INFO] [1795356727.130190004] [amcl]: Received a 300 X 214 map @ 0.050 m/pix
+[INFO] [1795356727.233711607] [amcl]: Activating
+[INFO] [1795356727.233753932] [amcl]: initialPoseReceived
+[INFO] [1795356727.233867202] [amcl]: Setting pose (681.843000): 0.000 0.000 0.000
+[INFO] [1795356727.234656982] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1795356727.247664661] [amcl]: createLaserObject
+[INFO] [1795356739.057033333] [amcl]: initialPoseReceived
+[WARN] [1795356739.057116915] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 687.561000 but the latest data is at time 687.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795356739.057125754] [amcl]: Setting pose (687.561000): 0.000 0.000 0.000
+[INFO] [1795356767.493725366] [amcl]: initialPoseReceived
+[WARN] [1795356767.493966380] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 701.421000 but the latest data is at time 701.420000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795356767.494005296] [amcl]: Setting pose (701.421000): 0.000 0.000 0.000
+[INFO] [1795356820.747355565] [amcl]: initialPoseReceived
+[WARN] [1795356820.747483188] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 727.281000 but the latest data is at time 727.280000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795356820.747496016] [amcl]: Setting pose (727.281000): 0.000 0.000 0.000
+[INFO] [1795356858.747465839] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795356858.747584108] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1795356858.747651019] [amcl]: Deactivating
+[INFO] [1795356858.747669425] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1795356858.757959361] [amcl]: Cleaning up
+[INFO] [1795356858.761590595] [amcl]: Destroying bond (amcl) to lifecycle manager.

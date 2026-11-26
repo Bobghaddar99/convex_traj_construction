@@ -1,0 +1,20 @@
+[INFO] [1795351248.410393500] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795351248.410521937] [map_saver]: Creating
+[INFO] [1795351248.410577238] [map_saver]: Configuring
+[INFO] [1795351248.411393185] [map_saver]: Saving map from 'map' topic to '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/map_005' file
+[WARN] [1795351248.411419639] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1795351249.413768342] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1795351249.413821595] [map_io]: Received a 300 X 214 map @ 0.05 m/pix
+[INFO] [1795351249.462025919] [map_io]: Writing map occupancy data to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/map_005.pgm
+[INFO] [1795351249.462824288] [map_io]: Writing map metadata to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/map_005.yaml
+[INFO] [1795351249.462984602] [map_io]: Map saved
+[INFO] [1795351249.463001387] [map_saver]: Map saved successfully
+[INFO] [1795351249.464883576] [map_saver]: Destroying
+requester: making request: slam_toolbox.srv.SerializePoseGraph_Request(filename='/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/posegraph')
+
+response:
+slam_toolbox.srv.SerializePoseGraph_Response(result=0)
+

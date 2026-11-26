@@ -1,0 +1,34 @@
+Panels: []
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: SLAM map
+      Alpha: 1
+      Draw Behind: true
+      Enabled: true
+      Value: true
+      Topic: {Value: /map, Durability Policy: Transient Local, Reliability Policy: Reliable, History Policy: Keep Last, Depth: 1}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Recorded trials
+      Enabled: true
+      Value: true
+      Topic: {Value: /photo, Durability Policy: Transient Local, Reliability Policy: Reliable, History Policy: Keep Last, Depth: 1}
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Angle: 0
+      Scale: 80
+      X: 1.97
+      Y: -1.1
+Window Geometry:
+  X: 30
+  Y: 40
+  Width: 1500
+  Height: 1000

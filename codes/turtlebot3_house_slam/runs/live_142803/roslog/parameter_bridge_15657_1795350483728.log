@@ -1,0 +1,8 @@
+[INFO] [1795350484.740297975] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [1795350484.741124358] [ros_gz_bridge]: Creating GZ->ROS Bridge: [joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[INFO] [1795350484.742642652] [ros_gz_bridge]: Creating GZ->ROS Bridge: [odom (gz.msgs.Odometry) -> wheel_odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[INFO] [1795350484.743727028] [ros_gz_bridge]: Creating ROS->GZ Bridge: [house_sim/cmd_vel (geometry_msgs/msg/Twist) -> cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[INFO] [1795350484.744139879] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu (gz.msgs.IMU) -> imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[INFO] [1795350484.744473586] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[INFO] [1795350576.020868171] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[INFO] [1795355329.015153084] [rclcpp]: signal_handler(SIGINT/SIGTERM)

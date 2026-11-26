@@ -1,0 +1,47 @@
+[INFO] [1795358076.462518527] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795358076.465453946] [controller_server]: Creating controller server
+[INFO] [1795358076.470518854] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795358076.470751430] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795358085.496212404] [controller_server]: Configuring controller interface
+[INFO] [1795358085.496317369] [controller_server]: getting goal checker plugins..
+[INFO] [1795358085.496379803] [controller_server]: Controller frequency set to 5.0000Hz
+[INFO] [1795358085.496409631] [local_costmap.local_costmap]: Configuring
+[INFO] [1795358085.498810042] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1795358085.500609528] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795358085.503379468] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1795358085.503396020] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795358085.503677387] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795358085.506739044] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795358085.507119258] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795358085.507256791] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1795358085.508067344] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1795358085.508559521] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1795358085.513717300] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1795358085.513914634] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.513979873] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1795358085.514115910] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.514155276] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1795358085.514204971] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.514267044] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1795358085.514711969] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.514764322] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1795358085.515118864] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.515156222] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1795358085.515505026] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.515630260] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1795358085.516074615] [controller_server]: Critic plugin initialized
+[INFO] [1795358085.516095453] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1795358088.879212391] [controller_server]: Activating
+[INFO] [1795358088.879266312] [local_costmap.local_costmap]: Activating
+[INFO] [1795358088.879278151] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795358088.879348166] [local_costmap.local_costmap]: start
+[INFO] [1795358089.129868636] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795358098.738627423] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1795358100.753947889] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1795358120.955460764] [controller_server]: Failed to mak

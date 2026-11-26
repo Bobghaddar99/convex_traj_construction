@@ -1,0 +1,42 @@
+[INFO] [1795349397.297903442] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795349397.297969004] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1795349397.336000405] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795349401.144389253] [rviz2]: Trying to create a map of size 127 x 79 using 1 swatches
+[ERROR] [1795349401.173329378] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1795349411.877867975] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795349427.129392789] [rviz2]: Trying to create a map of size 127 x 80 using 1 swatches
+[INFO] [1795349443.141296998] [rviz2]: Trying to create a map of size 128 x 99 using 1 swatches
+[INFO] [1795349445.125467395] [rviz2]: Trying to create a map of size 173 x 107 using 1 swatches
+[INFO] [1795349447.140704320] [rviz2]: Trying to create a map of size 174 x 107 using 1 swatches
+[INFO] [1795349485.130210943] [rviz2]: Trying to create a map of size 174 x 115 using 1 swatches
+[INFO] [1795349487.143945849] [rviz2]: Trying to create a map of size 174 x 131 using 1 swatches
+[INFO] [1795349491.144966432] [rviz2]: Trying to create a map of size 174 x 142 using 1 swatches
+[INFO] [1795349493.131521053] [rviz2]: Trying to create a map of size 174 x 145 using 1 swatches
+[INFO] [1795349495.142271506] [rviz2]: Trying to create a map of size 174 x 155 using 1 swatches
+[INFO] [1795349497.129135912] [rviz2]: Trying to create a map of size 174 x 160 using 1 swatches
+[INFO] [1795349499.142864296] [rviz2]: Trying to create a map of size 174 x 167 using 1 swatches
+[INFO] [1795349501.162875122] [rviz2]: Trying to create a map of size 174 x 174 using 1 swatches
+[INFO] [1795349503.142656695] [rviz2]: Trying to create a map of size 174 x 183 using 1 swatches
+[INFO] [1795349605.158931791] [rviz2]: Trying to create a map of size 178 x 183 using 1 swatches
+[INFO] [1795349617.160164984] [rviz2]: Trying to create a map of size 183 x 183 using 1 swatches
+[INFO] [1795349619.143146251] [rviz2]: Trying to create a map of size 188 x 183 using 1 swatches
+[INFO] [1795349621.160548192] [rviz2]: Trying to create a map of size 193 x 183 using 1 swatches
+[INFO] [1795349623.141865074] [rviz2]: Trying to create a map of size 195 x 183 using 1 swatches
+[INFO] [1795349625.159642375] [rviz2]: Trying to create a map of size 208 x 183 using 1 swatches
+[INFO] [1795349629.159643712] [rviz2]: Trying to create a map of size 219 x 183 using 1 swatches
+[INFO] [1795349631.142575753] [rviz2]: Trying to create a map of size 230 x 183 using 1 swatches
+[INFO] [1795349633.157722999] [rviz2]: Trying to create a map of size 240 x 183 using 1 swatches
+[INFO] [1795349635.143629531] [rviz2]: Trying to create a map of size 243 x 183 using 1 swatches
+[INFO] [1795349637.160425748] [rviz2]: Trying to create a map of size 253 x 183 using 1 swatches
+[INFO] [1795349639.141592336] [rviz2]: Trying to create a map of size 259 x 183 using 1 swatches
+[INFO] [1795349641.158022076] [rviz2]: Trying to create a map of size 264 x 183 using 1 swatches
+[INFO] [1795349643.143771604] [rviz2]: Trying to create a map of size 282 x 183 using 1 swatches
+[INFO] [1795349647.142171838] [rviz2]: Trying to create a map of size 297 x 183 using 1 swatches
+[INFO] [1795349649.161191348] [rviz2]: Trying to create a map of size 298 x 183 using 1 swatches
+[INFO] [1795349667.142190000] [rviz2]: Trying to create a map of size 298 x 185 using 1 swatches
+[INFO] [1795349669.160644118] [rviz2]: Trying to create a map of size 298 x 194 using 1 swatches
+[INFO] [1795349671.142779876] [rviz2]: Trying to create a map of size 298 x 201 using 1 swatches
+[INFO] [1795349673.159629261] [rviz2]: Trying to create a map of size 298 x 211 using 1 swatches
+[INFO] [1795349887.145165829] [rviz2]: Trying to create a map of size 299 x 210 using 1 swatches
+[INFO] [1795349914.550162835] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,520 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------------------------------------------------------------
+% Packages
+% ---------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+\title{Reproducing and Assessing OTPWR:\\
+Globally Optimal, Dynamically Feasible Trajectory Planning\\
+for Wheeled Mobile Robots}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% ===============================================================
+\section{Introduction}
+\label{sec:intro}
+% ===============================================================
+
+Demand for round-the-clock monitoring of buildings, industrial campuses,
+substations and chemical plants keeps growing, while the security and
+inspection workforce is ageing and labour costs are rising
+\citep{luo2024otpwr,gao2018patrol}. Wheeled mobile robots that can patrol
+such sites on their own are an attractive answer, and their usefulness
+depends heavily on \emph{motion planning}: once a map of the environment is
+available, the robot must compute a feasible trajectory from its current pose
+to a target pose that is collision-free, respects the robot's kinematic and
+dynamic limits, and is good with respect to some criterion such as path
+length, travel time or energy
+\citep{lavalle2006planning,siegwart2011introduction}.
+
+In practice, motion planning for ground robots is almost always split into
+two layers \citep{marder2010office,paden2016survey}. A \emph{global planner}
+searches a map for a sequence of collision-free waypoints. Typical choices
+are graph search on an occupancy grid (Dijkstra, A$^\ast$) or sampling-based
+planners (PRM, RRT$^\ast$). A \emph{local planner}, such as the Dynamic Window
+Approach (DWA) \citep{fox1997dwa}, artificial potential fields
+\citep{khatib1986realtime} or the Timed Elastic Band (TEB)
+\citep{rosmann2012teb}, then turns those waypoints into velocity commands
+over a short horizon while respecting the robot's dynamics. This split makes
+both layers tractable, but it has a known weakness. The global planner
+optimises a purely geometric cost and ignores velocity and acceleration, so
+its output is a list of points rather than a trajectory. The local planner
+does account for dynamics, but it optimises a short-horizon objective and can
+therefore get stuck in local minima, oscillate, or deviate from (or even skip)
+global waypoints. The motion that results is neither globally optimal nor
+guaranteed to be smooth.
+
+% ---------------------------------------------------------------
+\subsection{Related work}
+\label{sec:lit}
+
+Over the past decades, motion planning for wheeled robots has moved from
+coarse path planning over isolated points in space towards fine trajectory
+planning in time, helped by growing on-board computing power
+\citep{luo2024otpwr,gonzalez2016review}. The rest of this
+subsection follows that progression. It covers graph-based global search
+(Section~\ref{sec:lit-graph}), sampling-based and kinodynamic planning
+(Section~\ref{sec:lit-sampling}), local and reactive planners
+(Section~\ref{sec:lit-local}), differential flatness
+(Section~\ref{sec:lit-flat}), optimisation-based polynomial trajectory
+generation (Section~\ref{sec:lit-poly}), continuous-time safety and
+feasibility (Section~\ref{sec:lit-safe}), and new literature from recent
+years (Section~\ref{sec:lit-new}).
+
+% ---------------------------------------------------------------
+\subsubsection{Graph-based global path search}
+\label{sec:lit-graph}
+
+Graph search needs a discrete representation of the workspace. Common choices
+are visibility graphs, Voronoi diagrams and occupancy grids
+\citep{lavalle2006planning}. Visibility graphs give shortest paths that touch
+obstacle corners. Voronoi diagrams maximise clearance at the cost of path
+length. Grid maps divide the plane at a fixed resolution and connect cells in
+four or eight directions. They are by far the most common choice for indoor
+robots because they map directly onto the occupancy grids produced by 2-D
+LiDAR SLAM.
+
+Dijkstra's algorithm \citep{dijkstra1959note} expands nodes in order of their
+cost-to-come $g(n)$ and returns an optimal path on any graph with
+non-negative edge weights. Because it has no sense of where the goal lies, it
+expands nodes uniformly in all directions. A$^\ast$ \citep{hart1968formal}
+orders expansion by $f(n)=g(n)+h(n)$. If the heuristic $h$ is
+\emph{admissible} ($h(n)\le h^\ast(n)$), A$^\ast$ still returns an optimal
+path, and if $h$ is also consistent, no node is expanded more than once. The
+heuristic must suit the connectivity of the grid. On an eight-connected grid,
+the Manhattan distance overestimates the true cost and so loses optimality.
+The Euclidean distance is admissible but loose. The octile, or diagonal,
+distance
+\begin{equation}
+  h(n)=D_{\mathrm{s}}\,(d_x+d_y)+(D_{\mathrm{d}}-2D_{\mathrm{s}})\min(d_x,d_y)
+\end{equation}
+equals the exact obstacle-free cost and is therefore the tightest admissible
+choice. This is the heuristic OTPWR adopts. Many nodes on such grids have
+equal $f$ values, so tie-breaking strongly affects how many nodes are
+expanded. Multiplying $h$ by a small factor $(1+p)$ favours nodes nearer the
+goal, as OTPWR does. In doing so it moves towards weighted A$^\ast$
+\citep{pohl1970heuristic}, which trades a bounded loss of optimality for
+speed. Anytime variants such as ARA$^\ast$ \citep{likhachev2003ara} make that
+trade-off adjustable at run time.
+
+Several extensions target speed or changing environments. Jump Point Search
+(JPS) \citep{harabor2011online} prunes symmetric paths on uniform-cost grids
+and expands only ``jump points'', which can speed search up by an order of
+magnitude while keeping optimality. Fan and Guo \citep{fan2023improved}
+adapt JPS for a seabed mining vehicle. D$^\ast$ \citep{stentz1994optimal} and
+D$^\ast$~Lite \citep{koenig2002dstar} repair the solution incrementally when
+the map changes, which matters for robots that discover obstacles as they
+move. Recent application papers keep refining A$^\ast$ for particular
+domains, for example orchard mowers \citep{zhang2024orchard} and multimodal
+urban transport \citep{feng2023improved}. Liu et al.\ \citep{liu2023kinematically}
+add kinematic constraints to A$^\ast$ and fuse it with DWA.
+
+All of these methods share one limitation for our purposes: they return a
+sequence of grid cells. The path has corners where the heading changes
+abruptly, and it carries no information about velocity or time, so it cannot
+be executed directly by a robot with bounded acceleration.
+
+% ---------------------------------------------------------------
+\subsubsection{Sampling-based and kinodynamic planning}
+\label{sec:lit-sampling}
+
+Sampling-based planners avoid discretising the space explicitly and scale to
+high-dimensional configuration spaces. Probabilistic Roadmaps (PRM)
+\citep{kavraki1996probabilistic} build a reusable graph of random collision-free
+samples. Rapidly-exploring Random Trees (RRT) \citep{lavalle1998rapidly}
+grow a tree from the start and are probabilistically complete.
+Karaman and Frazzoli \citep{karaman2011sampling} showed that RRT almost
+surely converges to a suboptimal solution and introduced RRT$^\ast$ and
+PRM$^\ast$, which are asymptotically optimal. Informed RRT$^\ast$
+\citep{gammell2014informed} restricts sampling to an ellipsoid once a first
+solution exists and so speeds up convergence. Recent variants include
+double-layer, goal-biased anytime RRT$^\ast$ \citep{esmaiel2024double}, an
+improved RRT$^\ast$ for disinfection robots \citep{wang2024improved}, and
+Informed-Bi-Quick RRT$^\ast$ for dual-arm systems \citep{zhang2024informed}.
+
+Plain RRT$^\ast$ joins nodes with straight lines and so ignores the system's
+dynamics. \emph{Kinodynamic} planners join nodes with dynamically feasible
+local trajectories instead \citep{lavalle2001randomized}. LQR-RRT$^\ast$
+\citep{perez2012lqr} uses a linear-quadratic regulator to derive the
+extension heuristic and distance metric. Kinodynamic RRT$^\ast$
+\citep{webb2013kinodynamic} solves a fixed-final-state, free-final-time
+optimal control problem between nodes of a linear system. For differentially
+flat systems, the steering problem can instead be written as an optimisation
+over the flat outputs (Section~\ref{sec:lit-flat}), which yields optimal
+motion primitives between states. On the search-based side, state lattices
+\citep{pivtoraiko2009differentially} and Hybrid A$^\ast$
+\citep{dolgov2010path} expand nodes with kinematically feasible motion
+primitives, so the path they return can be driven.
+
+These methods couple search and dynamics, but at a price. Sampling-based
+planners give only probabilistic guarantees and converge slowly in practice.
+Kinodynamic steering must be solved at every edge, which is expensive. For a
+planar robot on a 2-D grid, where the search space is small, systematic graph
+search remains the more efficient choice. OTPWR follows this reasoning: it
+keeps a cheap 2-D graph search and adds dynamics afterwards in a separate
+optimisation stage.
+
+% ---------------------------------------------------------------
+\subsubsection{Local and reactive planners}
+\label{sec:lit-local}
+
+Local planners produce the robot's commands over a short horizon. The
+Artificial Potential Field (APF) method \citep{khatib1986realtime} treats the
+goal as an attractive field and obstacles as repulsive fields. It is simple
+and fast, but it has well-known local minima and oscillates in narrow
+passages \citep{koren1991potential}. Variants such as APF-S2T
+\citep{chen2024apf} are still being developed. The Dynamic Window Approach
+\citep{fox1997dwa} samples linear and angular velocities $(v,\omega)$ within
+the window reachable under the acceleration limits, simulates each pair
+forward, and picks the one that maximises a weighted sum of heading,
+clearance and speed. DWA respects the robot's dynamics by construction and
+is the default local planner in the ROS navigation stack
+\citep{marder2010office}. Recent work adds energy management and fuzzy-logic
+weight tuning \citep{yao2024improved}. Elastic bands
+\citep{quinlan1993elastic} deform a global path as if it were under internal
+and external forces. The Timed Elastic Band (TEB)
+\citep{rosmann2012teb,rosmann2017integrated} adds time intervals between
+poses and solves a sparse nonlinear least-squares problem over kinematic,
+dynamic and clearance objectives. It has been applied to cooperative
+steering robots \citep{sun2022solution}.
+
+These local methods share the weaknesses that motivate OTPWR. Their
+objectives are local, so the motion that results is not globally optimal.
+Sampling-based methods such as DWA produce piecewise-constant, jagged
+velocity profiles. When the local goal sequence is followed with a finite
+look-ahead window, a waypoint can be overshot or skipped. Fusing A$^\ast$
+with DWA \citep{liu2023kinematically} keeps these layers separate rather than
+unifying them.
+
+% ---------------------------------------------------------------
+\subsubsection{Differential flatness}
+\label{sec:lit-flat}
+
+A nonlinear system is \emph{differentially flat} if there is a set of outputs,
+equal in number to the inputs, such that every state and input can be written
+as an algebraic function of these outputs and finitely many of their
+derivatives \citep{fliess1995flatness}. Flatness turns trajectory generation
+into a problem in the space of flat outputs. Any sufficiently smooth flat
+output curve corresponds to a feasible state--input trajectory, so the
+system's differential constraints no longer need to be enforced explicitly.
+Murray et al.\ \citep{murray1995flat} catalogue flat mechanical systems,
+including the unicycle and the kinematic car. Ryu and Agrawal
+\citep{ryu2011differential} use flatness for robust control of mobile robots
+that slip.
+
+For the unicycle model
+\begin{equation}
+  \dot x = v\cos\theta,\qquad
+  \dot y = v\sin\theta,\qquad
+  \dot\theta = \omega,
+\end{equation}
+the position $\sigma=[x,y]^{\mathsf T}$ is a flat output, with
+\begin{equation}
+  \theta=\operatorname{atan2}(\dot y,\dot x),\qquad
+  v=\sqrt{\dot x^2+\dot y^2},\qquad
+  \omega=\frac{\dot x\ddot y-\dot y\ddot x}{\dot x^2+\dot y^2}.
+\end{equation}
+The map is singular when $v=0$, so the heading at rest, and at the start and
+goal in particular, must be handled separately. Flatness is also the basis
+of minimum-snap planning for quadrotors \citep{mellinger2011minimum}, where
+the flat outputs are position and yaw. OTPWR applies the same idea to a
+planar wheeled robot.
+
+% ---------------------------------------------------------------
+\subsubsection{Optimisation-based polynomial trajectory generation}
+\label{sec:lit-poly}
+
+Once planning happens in flat-output space, a natural trajectory model is a
+piecewise polynomial through the waypoints. The idea of minimising the
+integral of a squared derivative goes back to the minimum-jerk model of human
+arm motion \citep{flash1985coordination}. Mellinger and Kumar
+\citep{mellinger2011minimum} formulated minimum-snap trajectory generation
+for quadrotors as a QP over polynomial coefficients. The cost
+$\int\!\big(f^{(k)}(t)\big)^2\,dt$ is a convex quadratic form
+$\mathbf p^{\mathsf T}H\mathbf p$ in the coefficients $\mathbf p$, and
+waypoint, continuity and boundary conditions are linear equalities. Richter,
+Bry and Roy \citep{richter2016polynomial} showed that the unconstrained
+problem can be solved in closed form by optimising over endpoint derivatives,
+which improves numerical conditioning. They also used an RRT$^\ast$ path as
+the waypoint sequence and optimised the segment times by gradient descent.
+Oleynikova et al.\ \citep{oleynikova2016continuous} added collision costs for
+online replanning, and Preiss et al.\ \citep{preiss2017downwash} extended
+polynomial planning to large quadrotor teams. For road vehicles, the Baidu
+Apollo EM planner \citep{fan2018baidu} splits planning into path and speed
+sub-problems, each solved by dynamic programming followed by spline QP.
+
+More general trajectory optimisation methods such as CHOMP
+\citep{ratliff2009chomp} and TrajOpt \citep{schulman2014motion} optimise over
+time-discretised states with collision terms. They handle complex geometry
+but are non-convex and depend on initialisation. The polynomial QP is convex,
+because $H$ is a Gram matrix and is positive semidefinite
+\citep{boyd2004convex}, so it has a global optimum for fixed waypoints and
+segment times. It can be solved in milliseconds by modern first-order solvers
+such as OSQP \citep{stellato2020osqp}. OTPWR adopts this formulation with
+$k=4$ (snap) and fifth-order segments. It adds linear inequality constraints
+on velocity and acceleration at the segment junctions.
+
+% ---------------------------------------------------------------
+\subsubsection{Continuous-time safety, feasibility and time allocation}
+\label{sec:lit-safe}
+
+Waypoint-constrained polynomial QPs have three known gaps, and the aerial
+robotics literature has addressed each of them.
+
+\paragraph{Collision between waypoints.} A polynomial that interpolates
+collision-free waypoints can still cut corners or overshoot into obstacles.
+Richter et al.\ \citep{richter2016polynomial} insert extra waypoints and
+re-solve until the trajectory is collision-free. A more principled approach
+is to build a sequence of convex free-space regions (a \emph{safe flight
+corridor}) around the discrete path and to constrain each segment to stay
+inside its region. Examples are axis-aligned cubes \citep{chen2016online},
+convex polyhedra obtained by ellipsoid inflation \citep{liu2017planning}, and
+convex regions found by IRIS together with mixed-integer segment assignment
+\citep{deits2015efficient}.
+
+\paragraph{Bounds inside segments.} Imposing $|v|\le v_{\max}$ and
+$|a|\le a_{\max}$ only at the junctions does not bound the extrema inside a
+segment. Gao et al.\ \citep{gao2018online} write each segment in the
+Bernstein basis. Because of the convex-hull property, linear constraints on
+the control points then guarantee that position, velocity and acceleration
+stay within bounds over the whole segment. Zhou et al.\
+\citep{zhou2019robust} use B-splines with the same property inside a fast
+kinodynamic planner.
+
+\paragraph{Time allocation.} With fixed segment durations $T_j$ the QP is
+convex, but the overall optimum depends strongly on the $T_j$. Heuristics
+such as dividing distance by maximum speed can be far from optimal.
+Gradient-based refinement \citep{richter2016polynomial} and joint
+spatial--temporal optimisation, such as MINCO \citep{wang2022geometrically},
+optimise the durations directly while keeping the inner problem efficient.
+
+% ---------------------------------------------------------------
+\subsubsection{New literature}
+\label{sec:lit-new}
+
+The OTPWR article cites mostly application papers from 2022--2024. Several
+newer lines of work, which the article does not discuss, bear directly on
+its design choices and on our reproduction.
+
+\paragraph{Modern navigation stacks.} The ROS~2 navigation system Nav2
+\citep{macenski2020marathon} replaced the original \texttt{move\_base}
+architecture \citep{marder2010office}, but it keeps the same split into a
+global planner and a local controller. Its Smac Planner
+\citep{macenski2024smac} provides cost-aware A$^\ast$, Hybrid-A$^\ast$ and
+state-lattice planners, so kinematic feasibility is now handled inside the
+global search in widely deployed systems. On the local side, sampling-based
+model predictive control such as MPPI \citep{williams2017mppi} evaluates
+thousands of rollouts in parallel and is a common alternative to DWA. These
+systems show that the global/local split OTPWR criticises is still the
+industry default, and that stronger baselines than DWA now exist.
+
+\paragraph{Flatness-based spatio-temporal optimisation for ground robots.}
+The flatness-plus-optimisation idea behind OTPWR has recently been taken
+further for wheeled vehicles. Han et al.\ \citep{han2024efficient} use the
+differential flatness of car-like robots to optimise the trajectory shape and
+the time allocation together. They keep the vehicle inside a safe driving
+corridor and avoid moving obstacles with signed-distance approximations.
+Zhang et al.\ \citep{zhang2024universal} propose a trajectory optimisation
+framework that covers the whole class of differential-drive robots. Unlike
+OTPWR, these methods treat the segment durations as decision variables and
+enforce safety along the trajectory, not only at the waypoints. They are
+therefore the closest modern counterparts to OTPWR. Exact collision avoidance
+for robots with non-point shapes can also be written as smooth constraints
+using convex duality \citep{zhang2021obca}.
+
+\paragraph{Convex optimisation around obstacles.} OTPWR first fixes a path
+with A$^\ast$ and then optimises a trajectory along it, so the second stage
+cannot change the route. Marcucci et al.\ \citep{marcucci2023gcs} instead
+decompose free space into convex sets and pose the route choice and the
+trajectory optimisation as one shortest-path problem in a \emph{graph of
+convex sets} (GCS). A tight convex relaxation of this problem gives
+trajectories that are globally optimal within the chosen curve class. This
+is a much stronger meaning of ``globally optimal'' than the one used in
+OTPWR.
+
+\paragraph{Time parameterisation.} Choosing the segment times $T_j$ is the
+main input OTPWR leaves unspecified. When the geometric path is fixed, the
+time-optimal speed profile under velocity and acceleration limits can be
+computed efficiently and robustly by reachability analysis (TOPP-RA)
+\citep{pham2018toppra}. This offers a principled alternative to heuristic
+time allocation.
+
+\paragraph{Benchmarking and reproducibility.} Recent benchmarks show that
+navigation of differential-drive robots in tight spaces is far from solved.
+In the BARN challenge \citep{xiao2022barn}, teams navigated a standard
+differential-drive robot through highly constrained obstacle courses, both
+in simulation and in the real world. More broadly, robotics researchers have
+called for replicable experiments with clearly reported methods, parameters
+and data \citep{bonsignorio2015replicable}. Our project follows that call:
+OTPWR reports its speed-ups on two maps without the parameters needed to
+repeat them, and an independent reproduction on many maps is needed to
+judge whether the claims generalise.
+
+% ---------------------------------------------------------------
+\subsubsection{Summary}
+\label{sec:lit-gap}
+
+Table~\ref{tab:lit} places the main approaches side by side. Graph search
+gives global optimality cheaply in 2-D, but its output is a list of points.
+Local planners respect dynamics only locally. Optimisation-based polynomial
+methods give smooth, dynamically consistent trajectories, but they need good
+waypoints, good time allocation and explicit safety constraints to be
+optimal and safe in continuous time.
+
+\begin{table}[t]
+  \centering
+  \caption{Comparison of motion-planning families relevant to OTPWR.}
+  \label{tab:lit}
+  \small
+  \begin{tabularx}{\textwidth}{@{}l L L L@{}}
+    \toprule
+    \textbf{Family} & \textbf{Representative work} & \textbf{Strength} & \textbf{Limitation for wheeled robots} \\
+    \midrule
+    Graph search &
+      Dijkstra \citep{dijkstra1959note}, A$^\ast$ \citep{hart1968formal}, JPS \citep{harabor2011online}, D$^\ast$~Lite \citep{koenig2002dstar} &
+      Complete and optimal on the grid; fast in 2-D &
+      Discrete waypoints; no velocity or time; sharp corners \\
+    \addlinespace
+    Sampling-based &
+      PRM \citep{kavraki1996probabilistic}, RRT$^\ast$ \citep{karaman2011sampling}, Informed RRT$^\ast$ \citep{gammell2014informed} &
+      Scales to high dimensions; asymptotically optimal &
+      Only probabilistic guarantees; slow convergence; jagged paths \\
+    \addlinespace
+    Kinodynamic &
+      LQR-RRT$^\ast$ \citep{perez2012lqr}, Kinodynamic RRT$^\ast$ \citep{webb2013kinodynamic}, Hybrid A$^\ast$ \citep{dolgov2010path} &
+      Dynamically feasible edges &
+      Costly steering problem at every edge \\
+    \addlinespace
+    Local / reactive &
+      APF \citep{khatib1986realtime}, DWA \citep{fox1997dwa}, TEB \citep{rosmann2017integrated} &
+      Real-time; respects dynamics locally &
+      Local minima; not globally optimal; may skip waypoints \\
+    \addlinespace
+    Polynomial QP &
+      Minimum snap \citep{mellinger2011minimum,richter2016polynomial}, Apollo EM \citep{fan2018baidu} &
+      Convex; smooth; millisecond solve times &
+      Needs waypoints and $T_j$; safety only at waypoints \\
+    \addlinespace
+    Corridor / Bernstein &
+      SFC \citep{liu2017planning}, Bernstein \citep{gao2018online}, MINCO \citep{wang2022geometrically} &
+      Continuous-time safety and bounds &
+      More constraints; corridor construction cost \\
+    \addlinespace
+    Joint route + trajectory &
+      GCS \citep{marcucci2023gcs}, spatio-temporal flatness planners \citep{han2024efficient,zhang2024universal} &
+      Optimises shape, time and route together; safe along the whole trajectory &
+      Larger, sometimes non-convex problems; more complex to implement \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------
+\subsection{The OTPWR method and its open questions}
+\label{sec:otpwr}
+
+Luo et al.\ \citep{luo2024otpwr} propose \emph{Optimal Trajectory Planning for
+Wheeled Robots} (OTPWR) to close this gap with a single pipeline that has
+three stages:
+\begin{enumerate}[label=(\roman*),nosep]
+  \item \textbf{Dimensionality reduction by differential flatness.} The
+        unicycle model of a differential-drive robot is differentially flat
+        with flat output $\sigma=[x,y]^{\mathsf T}$
+        \citep{fliess1995flatness,murray1995flat}. The heading $\theta$ and
+        the inputs $(v,\omega)$ are recovered algebraically from
+        $\dot x,\dot y,\ddot x,\ddot y$, so planning can take place in the
+        two-dimensional plane.
+  \item \textbf{Global search with a diagonal-distance A$^\ast$.} An
+        eight-connected occupancy grid is searched with A$^\ast$ guided by
+        the octile (diagonal) heuristic and a small tie-breaking factor
+        $(1+p)$. This yields a shortest collision-free waypoint sequence.
+  \item \textbf{Minimum-snap trajectory optimisation.} Each flat output is
+        represented as a piecewise fifth-order polynomial through the
+        waypoints. The integral of the squared fourth derivative (snap) is
+        minimised as a convex quadratic program (QP), subject to waypoint
+        interpolation, velocity/acceleration continuity, and bounds on
+        velocity and acceleration, and is solved with OSQP
+        \citep{stellato2020osqp}.
+\end{enumerate}
+In simulation the authors report that diagonal A$^\ast$ finds the same
+shortest path as Dijkstra's algorithm while cutting search time by 46.6\%
+and the number of visited nodes by 43.1\%. They also report that the
+resulting trajectory is smoother than a DWA baseline and passes through every
+waypoint while DWA misses one. Experiments on a hub-motor robot running ROS
+complete the evaluation.
+
+OTPWR \citep{luo2024otpwr} combines three established ideas: flatness-based
+reduction to 2-D, an optimal graph search with a tight heuristic, and a
+minimum-snap QP. Together they replace the decoupled global/local
+architecture for wheeled robots with a single global trajectory. The idea of
+each stage is not new, since minimum-snap planning over a discrete path is
+standard practice for aerial robots \citep{richter2016polynomial}. The
+contribution of OTPWR is to apply this combination to differential-drive
+ground robots and to compare it with DWA.
+
+The claims are attractive, but several details that a reproduction needs
+are not stated in the article. Among them are the segment-time allocation
+$T_j$, the tie-breaking factor $p$, the step costs $D_{\mathrm{straight}}$ and
+$D_{\mathrm{diagonal}}$, and the exact benchmark maps. A second issue is
+structural. The QP enforces velocity and acceleration bounds only at the
+segment junctions, and it includes no constraint that keeps the polynomial
+inside free space \emph{between} waypoints. ``Globally optimal'' therefore
+holds only for the fixed waypoints and segment times. It does not hold for
+the continuous-time trajectory as a whole.
+
+% ---------------------------------------------------------------
+\subsection{Objectives and contributions}
+\label{sec:objectives}
+
+This report reproduces OTPWR independently and examines it critically. We
+ask four questions:
+\begin{enumerate}[label=\textbf{Q\arabic*.},nosep]
+  \item Can the published path-search results (Tables~1--2 of
+        \citep{luo2024otpwr}) be reproduced?
+  \item Do the conclusions hold across many randomly generated grid maps and
+        across maps built with SLAM in simulation?
+  \item Does the trajectory respect the velocity and acceleration limits and
+        stay collision-free when checked densely in continuous time, and not
+        only at the waypoints?
+  \item Does OTPWR outperform DWA on the same waypoints in smoothness and
+        waypoint attainment?
+\end{enumerate}
+
+The contributions of this work are:
+\begin{itemize}[nosep]
+  \item a Python implementation of the full OTPWR pipeline, together
+        with Dijkstra, Euclidean, Manhattan and diagonal A$^\ast$ baselines
+        and a DWA baseline ported from a reference MATLAB implementation;
+  \item a documented list of the assumptions needed to fill the gaps in the
+        article, each tested at several values;
+  \item a continuous-time audit of dynamic feasibility and obstacle clearance
+        along the optimised trajectories;
+  \item a discussion of extensions, namely convex safe corridors,
+        whole-segment bound enforcement and time-allocation optimisation,
+        that would make the method's optimality and safety claims hold in
+        continuous time.
+\end{itemize}
+
+The rest of the report is organised as follows. The next sections present
+the methodology, the experimental results and the discussion.
+
+% ---------------------------------------------------------------
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

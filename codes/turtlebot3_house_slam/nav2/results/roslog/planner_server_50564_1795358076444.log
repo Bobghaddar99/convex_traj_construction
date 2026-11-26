@@ -1,0 +1,38 @@
+[INFO] [1795358076.461951664] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795358076.462935843] [planner_server]: Creating
+[INFO] [1795358076.468946514] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795358076.469238543] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1795358085.479754449] [planner_server]: Configuring
+[INFO] [1795358085.479799704] [global_costmap.global_costmap]: Configuring
+[INFO] [1795358085.484732799] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1795358085.486820971] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1795358085.487479669] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1795358085.487494422] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795358085.487663773] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1795358085.488964668] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795358085.488979633] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1795358085.489256610] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795358085.492715602] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1795358085.492736088] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1795358085.492915354] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1795358085.519496108] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 300 X 214 at 0.050000 m/pix
+[INFO] [1795358085.724127664] [planner_server]: Activating
+[INFO] [1795358085.724155813] [global_costmap.global_costmap]: Activating
+[INFO] [1795358085.724163487] [global_costmap.global_costmap]: Checking transform
+[INFO] [1795358085.724180701] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1795358086.224263516] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1353.480000 but the earliest data is at time 1354.200000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795358086.724262329] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1353.740000 but the earliest data is at time 1354.200000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795358087.224240238] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1353.980000 but the earliest data is at time 1354.200000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795358087.724286729] [global_costmap.global_costmap]: start
+[INFO] [1795358088.774834302] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1795358088.775820263] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1795358098.739288839] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795358128.302200504] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795358186.507152725] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795377795.891529817] [rcl

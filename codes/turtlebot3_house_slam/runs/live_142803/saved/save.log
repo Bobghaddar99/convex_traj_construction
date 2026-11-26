@@ -1,0 +1,15 @@
+[INFO] [1795351394.418359071] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795351394.418467024] [map_saver]: Creating
+[INFO] [1795351394.418529560] [map_saver]: Configuring
+[INFO] [1795351394.419189655] [map_saver]: Saving map from 'map' topic to '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/saved/turtlebot3_house' file
+[WARN] [1795351394.419212928] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1795351394.430859656] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1795351394.430906814] [map_io]: Received a 300 X 214 map @ 0.05 m/pix
+[INFO] [1795351394.473365382] [map_io]: Writing map occupancy data to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/saved/turtlebot3_house.pgm
+[INFO] [1795351394.473900904] [map_io]: Writing map metadata to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/saved/turtlebot3_house.yaml
+[INFO] [1795351394.473991503] [map_io]: Map saved
+[INFO] [1795351394.473998970] [map_saver]: Map saved successfully
+[INFO] [1795351394.474491979] [map_saver]: Destroying

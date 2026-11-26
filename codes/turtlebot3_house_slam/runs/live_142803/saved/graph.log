@@ -1,0 +1,6 @@
+waiting for service to become available...
+requester: making request: slam_toolbox.srv.SerializePoseGraph_Request(filename='/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/saved/turtlebot3_house_posegraph')
+
+response:
+slam_toolbox.srv.SerializePoseGraph_Response(result=0)
+

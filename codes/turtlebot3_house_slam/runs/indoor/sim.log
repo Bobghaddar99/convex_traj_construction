@@ -1,0 +1,115 @@
+[INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/roslog/2026-11-22-14-09-57-042435-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-10277
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [nogpu.sh-1]: process started with pid [10310]
+[INFO] [create-2]: process started with pid [10312]
+[INFO] [parameter_bridge-3]: process started with pid [10314]
+[INFO] [python3-4]: process started with pid [10316]
+[INFO] [static_transform_publisher-5]: process started with pid [10318]
+[INFO] [static_transform_publisher-6]: process started with pid [10320]
+[INFO] [sync_slam_toolbox_node-7]: process started with pid [10323]
+[INFO] [nogpu.sh-8]: process started with pid [10325]
+[static_transform_publisher-5] [INFO] [1795349397.089980437] [tf_base_scan]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('-0.032000', '0.000000', '0.171000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_footprint' to 'base_scan'
+[static_transform_publisher-6] [INFO] [1795349397.091159544] [tf_base_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'base_footprint' to 'base_link'
+[sync_slam_toolbox_node-7] [INFO] [1795349397.094550314] [slam_toolbox]: Node using stack size 40000000
+[create-2] [INFO] [1795349397.100102521] [ros_gz_sim]: Requesting list of world names.
+[sync_slam_toolbox_node-7] [INFO] [1795349397.112655767] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[sync_slam_toolbox_node-7] [INFO] [1795349397.112802928] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[nogpu.sh-8] Gtk-Message: 14:09:57.149: Failed to load module "canberra-gtk-module"
+[nogpu.sh-8] Gtk-Message: 14:09:57.150: Failed to load module "canberra-gtk-module"
+[nogpu.sh-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="default"]/gui/camera[@name="user_camera"]/pose[@frame=""]:/home/ibrahim/Desktop/convex/turtlebot3_house_slam/worlds/turtlebot3_house_closed.world:L10]: XML Attribute[frame] in element[pose] not defined in SDF.
+[nogpu.sh-8] [INFO] [1795349397.297903442] [rviz2]: Stereo is NOT SUPPORTED
+[nogpu.sh-8] [INFO] [1795349397.297969004] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[nogpu.sh-8] [INFO] [1795349397.336000405] [rviz2]: Stereo is NOT SUPPORTED
+[create-2] [INFO] [1795349397.742259930] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1795349397.742369461] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-2]: process has finished cleanly [pid 10312]
+[parameter_bridge-3] [INFO] [1795349398.110051265] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795349398.112100808] [ros_gz_bridge]: Creating GZ->ROS Bridge: [joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795349398.115693632] [ros_gz_bridge]: Creating GZ->ROS Bridge: [odom (gz.msgs.Odometry) -> wheel_odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795349398.117029044] [ros_gz_bridge]: Creating ROS->GZ Bridge: [house_sim/cmd_vel (geometry_msgs/msg/Twist) -> cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795349398.117778826] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu (gz.msgs.IMU) -> imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795349398.118353576] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[nogpu.sh-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_burger"]/link[@name="base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/robot.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[nogpu.sh-1] [1;31m[Err] [SystemPaths.cc:526] [0m[1;31mCould not resolve file [[0m[1;31mWood_Floor_Dark.jpg[0m[1;31m][0m[1;31m[0m
+[nogpu.sh-1] [1;31m[Err] [SystemPaths.cc:526] [0m[1;31mCould not resolve file [[0m[1;31mMaple.jpg[0m[1;31m][0m[1;31m[0m
+[sync_slam_toolbox_node-7] Info: clipped range threshold to be within minimum and maximum range!
+[sync_slam_toolbox_node-7] Registering sensor: [Custom Described Lidar]
+[nogpu.sh-8] [INFO] [1795349401.144389253] [rviz2]: Trying to create a map of size 127 x 79 using 1 swatches
+[nogpu.sh-8] [ERROR] [1795349401.173329378] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[nogpu.sh-8] active samplers with a different type refer to the same texture image unit
+[nogpu.sh-8] [INFO] [1795349411.877867975] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[parameter_bridge-3] [INFO] [1795349420.528064799] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[nogpu.sh-8] [INFO] [1795349427.129392789] [rviz2]: Trying to create a map of size 127 x 80 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349443.141296998] [rviz2]: Trying to create a map of size 128 x 99 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349445.125467395] [rviz2]: Trying to create a map of size 173 x 107 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349447.140704320] [rviz2]: Trying to create a map of size 174 x 107 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349485.130210943] [rviz2]: Trying to create a map of size 174 x 115 using 1 swatches
+[sync_slam_toolbox_node-7] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[sync_slam_toolbox_node-7] W1122 14:11:26.547717 10390 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[nogpu.sh-8] [INFO] [1795349487.143945849] [rviz2]: Trying to create a map of size 174 x 131 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349491.144966432] [rviz2]: Trying to create a map of size 174 x 142 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349493.131521053] [rviz2]: Trying to create a map of size 174 x 145 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349495.142271506] [rviz2]: Trying to create a map of size 174 x 155 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349497.129135912] [rviz2]: Trying to create a map of size 174 x 160 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349499.142864296] [rviz2]: Trying to create a map of size 174 x 167 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349501.162875122] [rviz2]: Trying to create a map of size 174 x 174 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349503.142656695] [rviz2]: Trying to create a map of size 174 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349605.158931791] [rviz2]: Trying to create a map of size 178 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349617.160164984] [rviz2]: Trying to create a map of size 183 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349619.143146251] [rviz2]: Trying to create a map of size 188 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349621.160548192] [rviz2]: Trying to create a map of size 193 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349623.141865074] [rviz2]: Trying to create a map of size 195 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349625.159642375] [rviz2]: Trying to create a map of size 208 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349629.159643712] [rviz2]: Trying to create a map of size 219 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349631.142575753] [rviz2]: Trying to create a map of size 230 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349633.157722999] [rviz2]: Trying to create a map of size 240 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349635.143629531] [rviz2]: Trying to create a map of size 243 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349637.160425748] [rviz2]: Trying to create a map of size 253 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349639.141592336] [rviz2]: Trying to create a map of size 259 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349641.158022076] [rviz2]: Trying to create a map of size 264 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349643.143771604] [rviz2]: Trying to create a map of size 282 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349647.142171838] [rviz2]: Trying to create a map of size 297 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349649.161191348] [rviz2]: Trying to create a map of size 298 x 183 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349667.142190000] [rviz2]: Trying to create a map of size 298 x 185 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349669.160644118] [rviz2]: Trying to create a map of size 298 x 194 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349671.142779876] [rviz2]: Trying to create a map of size 298 x 201 using 1 swatches
+[nogpu.sh-8] [INFO] [1795349673.159629261] [rviz2]: Trying to create a map of size 298 x 211 using 1 swatches
+[sync_slam_toolbox_node-7] W1122 14:15:06.517738 10390 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[sync_slam_toolbox_node-7] W1122 14:17:26.157738 10390 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[sync_slam_toolbox_node-7] W1122 14:18:06.747501 10390 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[nogpu.sh-8] [INFO] [1795349887.145165829] [rviz2]: Trying to create a map of size 299 x 210 using 1 swatches
+[static_transform_publisher-6] [INFO] [1795349914.550164787] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-5] [INFO] [1795349914.550166954] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[nogpu.sh-8] [INFO] [1795349914.550162835] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[sync_slam_toolbox_node-7] [INFO] [1795349914.550162946] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-3] [INFO] [1795349914.550171773] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 10314]
+[sync_slam_toolbox_node-7] Save To File /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/posegraph.posegraph 
+[sync_slam_toolbox_node-7] Mapper <- Module
+[sync_slam_toolbox_node-7] Mapper <- m_pSequentialScanMatcher
+[sync_slam_toolbox_node-7] Mapper <- m_pGraph
+[sync_slam_toolbox_node-7] MapperGraph <- Graph; Graph <- m_Edges; Graph <- m_Vertices
+[sync_slam_toolbox_node-7] MapperGraph <- m_pMapper; MapperGraph <- m_pLoopScanMatcher; MapperGraph <- m_pTraversal
+[sync_slam_toolbox_node-7] Mapper <- m_pMapperSensorManager
+[sync_slam_toolbox_node-7] MapperSensorManager <- m_ScanManagers; MapperSensorManager <- m_Scans
+[sync_slam_toolbox_node-7] Mapper <- m_Listeners
+[sync_slam_toolbox_node-7] **Finished serializing Mapper**
+[sync_slam_toolbox_node-7] Save To File
+[sync_slam_toolbox_node-7] **Serializing Dataset**
+[sync_slam_toolbox_node-7] Dataset <- m_SensorNameLookup
+[sync_slam_toolbox_node-7] Dataset <- m_Data
+[sync_slam_toolbox_node-7] Dataset <- m_Lasers
+[sync_slam_toolbox_node-7] Dataset <- m_pDatasetInfo
+[sync_slam_toolbox_node-7] **Finished serializing Dataset**
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 10318]
+[INFO] [sync_slam_toolbox_node-7]: process has finished cleanly [pid 10323]
+[INFO] [static_transform_publisher-6]: process has finished cleanly [pid 10320]
+[INFO] [nogpu.sh-1]: process has finished cleanly [pid 10310]
+[INFO] [python3-4]: process has finished cleanly [pid 10316]
+[INFO] [nogpu.sh-8]: process has finished cleanly [pid 10325]

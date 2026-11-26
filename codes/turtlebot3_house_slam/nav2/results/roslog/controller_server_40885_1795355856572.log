@@ -1,0 +1,60 @@
+[INFO] [1795355856.926737243] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795355856.930778538] [controller_server]: Creating controller server
+[INFO] [1795355856.938246849] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795355856.938562253] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795355865.617245434] [controller_server]: Configuring controller interface
+[INFO] [1795355865.617321734] [controller_server]: getting goal checker plugins..
+[INFO] [1795355865.617354312] [controller_server]: Controller frequency set to 5.0000Hz
+[INFO] [1795355865.617377436] [local_costmap.local_costmap]: Configuring
+[INFO] [1795355865.620510229] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1795355865.622294755] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795355865.625148505] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1795355865.625166981] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795355865.625469329] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795355865.629612871] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795355865.630119814] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795355865.630302157] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1795355865.631567499] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1795355865.632030462] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1795355865.637778451] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1795355865.638053139] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.638126237] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1795355865.638321550] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.638389313] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1795355865.638484173] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.638539349] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1795355865.639004808] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.639078771] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1795355865.639534365] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.639598903] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1795355865.639983470] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.640045396] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1795355865.640312247] [controller_server]: Critic plugin initialized
+[INFO] [1795355865.640322877] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1795355869.003117875] [controller_server]: Activating
+[INFO] [1795355869.003153285] [local_costmap.local_costmap]: Activating
+[INFO] [1795355869.003162218] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795355869.003239998] [local_costmap.local_costmap]: start
+[INFO] [1795355869.253756650] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795355878.169473266] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1795355880.178612300] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1795355900.380025513] [controller_server]: Failed to make progress
+[WARN] [1795355900.380135059] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795355906.126465077] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1795355908.180122728] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1795355930.187326473] [controller_server]: No valid trajectories out of 72! 
+[INFO] [1795355930.187508910] [controller_server]: Reached the goal!
+[INFO] [1795355931.928934164] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795355931.929031601] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1795355931.929074390] [controller_server]: Deactivating
+[INFO] [1795355931.929100284] [local_costmap.local_costmap]: Deactivating
+[INFO] [1795355932.003414939] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795355932.013574119] [controller_server]: Cleaning up
+[INFO] [1795355932.014054142] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1795355932.023741816] [controller_server]: Destroying bond (controller_server) to lifecycle manager.

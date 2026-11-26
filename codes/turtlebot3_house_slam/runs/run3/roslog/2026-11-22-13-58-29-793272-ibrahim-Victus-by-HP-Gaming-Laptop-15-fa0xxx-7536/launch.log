@@ -1,0 +1,67 @@
+1795348709.7940156 [INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/run3/roslog/2026-11-22-13-58-29-793272-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-7536
+1795348709.7941220 [INFO] [launch]: Default logging verbosity is set to INFO
+1795348709.8321249 [INFO] [nogpu.sh-1]: process started with pid [7569]
+1795348709.8322666 [INFO] [create-2]: process started with pid [7571]
+1795348709.8323216 [INFO] [parameter_bridge-3]: process started with pid [7573]
+1795348709.8323648 [INFO] [python3-4]: process started with pid [7575]
+1795348709.8324075 [INFO] [static_transform_publisher-5]: process started with pid [7577]
+1795348709.8324556 [INFO] [static_transform_publisher-6]: process started with pid [7579]
+1795348709.8324952 [INFO] [sync_slam_toolbox_node-7]: process started with pid [7581]
+1795348709.8325279 [INFO] [nogpu.sh-8]: process started with pid [7583]
+1795348709.8558965 [static_transform_publisher-5] [INFO] [1795348709.855534424] [tf_base_scan]: Spinning until stopped - publishing transform
+1795348709.8560836 [static_transform_publisher-5] translation: ('-0.032000', '0.000000', '0.171000')
+1795348709.8561442 [static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1795348709.8561807 [static_transform_publisher-5] from 'base_footprint' to 'base_scan'
+1795348709.8564205 [static_transform_publisher-6] [INFO] [1795348709.855534704] [tf_base_link]: Spinning until stopped - publishing transform
+1795348709.8564894 [static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+1795348709.8565302 [static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1795348709.8565671 [static_transform_publisher-6] from 'base_footprint' to 'base_link'
+1795348709.9795394 [nogpu.sh-8] Gtk-Message: 13:58:29.979: Failed to load module "canberra-gtk-module"
+1795348709.9799480 [nogpu.sh-8] Gtk-Message: 13:58:29.979: Failed to load module "canberra-gtk-module"
+1795348710.2045875 [nogpu.sh-8] [INFO] [1795348710.204324003] [rviz2]: Stereo is NOT SUPPORTED
+1795348710.2047675 [nogpu.sh-8] [INFO] [1795348710.204385743] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+1795348710.2549393 [nogpu.sh-8] [INFO] [1795348710.254704697] [rviz2]: Stereo is NOT SUPPORTED
+1795348710.8572123 [INFO] [create-2]: process has finished cleanly [pid 7571]
+1795348713.9495854 [nogpu.sh-8] [INFO] [1795348713.949361755] [rviz2]: Trying to create a map of size 119 x 39 using 1 swatches
+1795348714.0191979 [nogpu.sh-8] [ERROR] [1795348714.019036110] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+1795348714.0193088 [nogpu.sh-8] active samplers with a different type refer to the same texture image unit
+1795348726.6475468 [nogpu.sh-8] [INFO] [1795348726.647300881] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+1795348743.9516087 [nogpu.sh-8] [INFO] [1795348743.951385212] [rviz2]: Trying to create a map of size 120 x 51 using 1 swatches
+1795348745.9649808 [nogpu.sh-8] [INFO] [1795348745.964809911] [rviz2]: Trying to create a map of size 120 x 56 using 1 swatches
+1795348747.9488811 [nogpu.sh-8] [INFO] [1795348747.948699648] [rviz2]: Trying to create a map of size 120 x 64 using 1 swatches
+1795348749.9659996 [nogpu.sh-8] [INFO] [1795348749.965770862] [rviz2]: Trying to create a map of size 120 x 73 using 1 swatches
+1795348751.9534116 [nogpu.sh-8] [INFO] [1795348751.953089436] [rviz2]: Trying to create a map of size 120 x 75 using 1 swatches
+1795348769.9656515 [nogpu.sh-8] [INFO] [1795348769.965474854] [rviz2]: Trying to create a map of size 134 x 76 using 1 swatches
+1795348771.9492939 [nogpu.sh-8] [INFO] [1795348771.949061404] [rviz2]: Trying to create a map of size 140 x 76 using 1 swatches
+1795348773.9653528 [nogpu.sh-8] [INFO] [1795348773.965124403] [rviz2]: Trying to create a map of size 152 x 76 using 1 swatches
+1795348775.9478464 [nogpu.sh-8] [INFO] [1795348775.947673693] [rviz2]: Trying to create a map of size 155 x 95 using 1 swatches
+1795348777.9678464 [nogpu.sh-8] [INFO] [1795348777.967619544] [rviz2]: Trying to create a map of size 166 x 95 using 1 swatches
+1795348779.9492660 [nogpu.sh-8] [INFO] [1795348779.949045148] [rviz2]: Trying to create a map of size 174 x 95 using 1 swatches
+1795348781.9678938 [nogpu.sh-8] [INFO] [1795348781.967597343] [rviz2]: Trying to create a map of size 178 x 96 using 1 swatches
+1795348783.9508438 [nogpu.sh-8] [INFO] [1795348783.950656934] [rviz2]: Trying to create a map of size 186 x 96 using 1 swatches
+1795348785.9656110 [nogpu.sh-8] [INFO] [1795348785.965428328] [rviz2]: Trying to create a map of size 197 x 96 using 1 swatches
+1795348787.9513087 [nogpu.sh-8] [INFO] [1795348787.951028583] [rviz2]: Trying to create a map of size 202 x 96 using 1 swatches
+1795348795.9498606 [nogpu.sh-8] [INFO] [1795348795.949662773] [rviz2]: Trying to create a map of size 202 x 120 using 1 swatches
+1795348805.9653897 [nogpu.sh-8] [INFO] [1795348805.965192712] [rviz2]: Trying to create a map of size 202 x 135 using 1 swatches
+1795348807.9528189 [nogpu.sh-8] [INFO] [1795348807.952539164] [rviz2]: Trying to create a map of size 202 x 138 using 1 swatches
+1795348809.9682093 [nogpu.sh-8] [INFO] [1795348809.968005517] [rviz2]: Trying to create a map of size 202 x 152 using 1 swatches
+1795348835.9502482 [nogpu.sh-8] [INFO] [1795348835.950047143] [rviz2]: Trying to create a map of size 202 x 178 using 1 swatches
+1795348839.9541385 [nogpu.sh-8] [INFO] [1795348839.953923759] [rviz2]: Trying to create a map of size 243 x 186 using 1 swatches
+1795348843.9550812 [nogpu.sh-8] [INFO] [1795348843.954879511] [rviz2]: Trying to create a map of size 243 x 187 using 1 swatches
+1795348845.9681344 [nogpu.sh-8] [INFO] [1795348845.967886635] [rviz2]: Trying to create a map of size 244 x 187 using 1 swatches
+1795348879.9512274 [nogpu.sh-8] [INFO] [1795348879.951041983] [rviz2]: Trying to create a map of size 244 x 188 using 1 swatches
+1795348881.9692671 [nogpu.sh-8] [INFO] [1795348881.969021644] [rviz2]: Trying to create a map of size 245 x 188 using 1 swatches
+1795348885.9698524 [nogpu.sh-8] [INFO] [1795348885.969653008] [rviz2]: Trying to create a map of size 244 x 190 using 1 swatches
+1795348887.9500651 [nogpu.sh-8] [INFO] [1795348887.949826872] [rviz2]: Trying to create a map of size 245 x 190 using 1 swatches
+1795348893.9706769 [nogpu.sh-8] [INFO] [1795348893.970478602] [rviz2]: Trying to create a map of size 246 x 190 using 1 swatches
+1795348897.9659843 [nogpu.sh-8] [INFO] [1795348897.965806665] [rviz2]: Trying to create a map of size 247 x 190 using 1 swatches
+1795348903.9530749 [nogpu.sh-8] [INFO] [1795348903.952893094] [rviz2]: Trying to create a map of size 248 x 190 using 1 swatches
+1795349017.8847435 [INFO] [nogpu.sh-8]: process has finished cleanly [pid 7583]
+1795349222.1817439 [static_transform_publisher-5] [INFO] [1795349222.180637386] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1795349222.1820793 [static_transform_publisher-6] [INFO] [1795349222.180638036] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1795349222.2878323 [INFO] [parameter_bridge-3]: process has finished cleanly [pid 7573]
+1795349222.2883062 [INFO] [static_transform_publisher-5]: process has finished cleanly [pid 7577]
+1795349222.2885978 [INFO] [static_transform_publisher-6]: process has finished cleanly [pid 7579]
+1795349222.2918158 [INFO] [sync_slam_toolbox_node-7]: process has finished cleanly [pid 7581]
+1795349222.3176873 [INFO] [python3-4]: process has finished cleanly [pid 7575]
+1795349222.4072008 [INFO] [nogpu.sh-1]: process has finished cleanly [pid 7569]

@@ -1,0 +1,22 @@
+[INFO] [1795354652.577842831] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795354652.578067603] [map_server]: Creating
+[INFO] [1795354653.290161696] [map_server]: Configuring
+[INFO] [1795354653.290221853] [map_io]: Loading yaml file: /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.yaml
+[INFO] [1795354653.290427117] [map_io]: resolution: 0.05
+[INFO] [1795354653.290432569] [map_io]: origin[0]: -5.53
+[INFO] [1795354653.290435468] [map_io]: origin[1]: -6.45
+[INFO] [1795354653.290438398] [map_io]: origin[2]: 0
+[INFO] [1795354653.290441524] [map_io]: free_thresh: 0.196
+[INFO] [1795354653.290449082] [map_io]: occupied_thresh: 0.65
+[INFO] [1795354653.290454018] [map_io]: mode: trinary
+[INFO] [1795354653.290459001] [map_io]: negate: 0
+[INFO] [1795354653.291019469] [map_io]: Loading image_file: /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.pgm
+[INFO] [1795354653.295984075] [map_io]: Read map /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.pgm: 300 X 214 map @ 0.05 m/cell
+[WARN] [1795354653.399476536] [map_server.rclcpp]: failed to send response to /map_server/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:154, at ./src/rcl/service.c:314
+[INFO] [1795354734.748467628] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795354734.748578985] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1795354734.748635405] [map_server]: Cleaning up
+[INFO] [1795354734.748661088] [map_server]: Destroying bond (map_server) to lifecycle manager.

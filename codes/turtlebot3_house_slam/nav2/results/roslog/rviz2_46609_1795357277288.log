@@ -1,0 +1,15 @@
+[INFO] [1795357277.429678612] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795357277.429752187] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1795357277.465797756] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795357278.397618395] [rviz2]: Trying to create a map of size 300 x 214 using 1 swatches
+[ERROR] [1795357278.424559045] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1795357297.947836055] [rviz]: Message Filter dropping message: frame 'base_scan' at time 954.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795357303.320040345] [rviz]: Message Filter dropping message: frame 'base_scan' at time 965.200 for reason 'discarding message because the queue is full'
+[INFO] [1795357473.943888276] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1049.200 for reason 'discarding message because the queue is full'
+[INFO] [1795357618.424112647] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1120.600 for reason 'discarding message because the queue is full'
+[INFO] [1795357623.608199503] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1123.200 for reason 'discarding message because the queue is full'
+[INFO] [1795357796.832353800] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1207.400 for reason 'discarding message because the queue is full'
+[INFO] [1795357917.952053198] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1267.600 for reason 'discarding message because the queue is full'
+[INFO] [1795358080.512472674] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1348.600 for reason 'discarding message because the queue is full'
+[INFO] [1795358085.728451143] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1351.200 for reason 'discarding message because the queue is full'

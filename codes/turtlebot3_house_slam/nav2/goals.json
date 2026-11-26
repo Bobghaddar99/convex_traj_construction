@@ -1,0 +1,31 @@
+{
+  "test": {
+    "A_south_west_room": {
+      "x": -4.505,
+      "y": -3.825,
+      "clearance": 0.93
+    },
+    "B_middle_room": {
+      "x": 3.095,
+      "y": 1.975,
+      "clearance": 1.05
+    },
+    "C_south_east_room": {
+      "x": 8.095,
+      "y": -2.375,
+      "clearance": 1.05
+    }
+  },
+  "tuning": {
+    "T1_north_west_room": {
+      "x": -4.005,
+      "y": 2.375,
+      "clearance": 1.4
+    },
+    "T2_east_room": {
+      "x": 8.495,
+      "y": 1.625,
+      "clearance": 0.88
+    }
+  }
+}

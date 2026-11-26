@@ -1,0 +1,16 @@
+[INFO] [1795349397.036302775] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1795349397.037090919] [rosbag2_storage]: Opened database '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1795349397.037402723] [rosbag2_recorder]: Listening for topics...
+[INFO] [1795349397.037414214] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1795349397.038341319] [rosbag2_recorder]: Subscribed to topic '/truth'
+[INFO] [1795349397.038386707] [rosbag2_recorder]: Recording...
+[INFO] [1795349397.140293746] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1795349397.141032169] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1795349397.342777684] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1795349398.148395037] [rosbag2_recorder]: Subscribed to topic '/clock'
+[INFO] [1795349398.149525781] [rosbag2_recorder]: Subscribed to topic '/imu'
+[INFO] [1795349398.150163035] [rosbag2_recorder]: Subscribed to topic '/scan'
+[INFO] [1795349398.150680600] [rosbag2_recorder]: Subscribed to topic '/wheel_odom'
+[INFO] [1795349398.150712904] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1795349914.551985224] [rosbag2_recorder]: Event publisher thread: Exiting
+[INFO] [1795349914.552076323] [rosbag2_recorder]: Recording stopped

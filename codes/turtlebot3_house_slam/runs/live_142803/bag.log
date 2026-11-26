@@ -1,0 +1,15 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1795350575.346853646] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1795350575.348508000] [rosbag2_storage]: Opened database '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/live_142803/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1795350575.349328820] [rosbag2_recorder]: Listening for topics...
+[INFO] [1795350575.349340166] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1795350575.351889283] [rosbag2_recorder]: Subscribed to topic '/wheel_odom'
+[INFO] [1795350575.353697154] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1795350575.354319773] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1795350575.355696678] [rosbag2_recorder]: Subscribed to topic '/imu'
+[INFO] [1795350575.356678026] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1795350575.357673551] [rosbag2_recorder]: Subscribed to topic '/clock'
+[INFO] [1795350575.357782420] [rosbag2_recorder]: Recording...
+[INFO] [1795350575.359206711] [rosbag2_recorder]: Subscribed to topic '/scan'
+[INFO] [1795350575.359237288] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1795351250.064453250] [rosbag2_recorder]: Event publisher thread: Exiting
+[INFO] [1795351250.064526301] [rosbag2_recorder]: Recording stopped

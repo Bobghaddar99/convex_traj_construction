@@ -1,0 +1,57 @@
+
+% ===============================================================
+\section{Introduction}
+\label{sec:intro}
+% ===============================================================
+
+The use of autonomous wheeled robots is increasing among a range of sectors \citep{luo2024otpwr,gao2018patrol}, and to achieve their optimal use, the calculated trajectory must respect the robot's kinematic and dynamic limits
+\citep{lavalle2006planning}. Robots usually use a 2 parts planning strategy
+\citep{marder2010office,paden2016survey}. First, to find correct and collision free waypoints, a global planner is used; however, it ignores the velocity and acceleration constraints. The second part is a local
+planner that tries to follow a trajectory that connects the waypoints, but can fail by either missing a point, generating noisy trajectories, or getting stuck in a local minimum.
+
+\subsection{Related work}
+\label{sec:lit}
+
+\paragraph{Global graph search.} On occupancy grids, Dijkstra's algorithm
+\citep{dijkstra1959note} surely returns shortest paths always; however, it tries to discover all nodes available which make it costly in terms of time. A$^\ast$ \citep{hart1968formal} is another search algorithm that uses heuristic; however the optimality of its solution is not guaranteed when it overestimates the cost to the goal, and its speed drops when it underestimates. For example, Manhattan A* overestimates when the robot is positioned in an octile grid, while Euclidean A* algorithm underestimates the path on the same 8 cell grid.
+
+\paragraph{Sampling based and kinodynamic planning.} PRM
+\citep{kavraki1996probabilistic} and RRT \citep{lavalle1998rapidly} are used when
+high dimension exist. Moreover, planners such as LQR-RRT$^\ast$ \citep{perez2012lqr},
+Kinodynamic RRT$^\ast$ \citep{webb2013kinodynamic}, and Hybrid A$^\ast$
+\citep{dolgov2010path} take the robot motion into consideration.
+This can lead to better reflection of how the robot moves,but it
+may increase planning time. 
+
+\paragraph{Local planners.} Artificial potential fields often
+\citep{khatib1986realtime} suffer from getting stuck in local minima \citep{koren1991potential}.
+Moreover, The Dynamic Window Approach (DWA) \citep{fox1997dwa,yao2024improved} samples different velocities and then scores them over a short time horizon.
+In addition, Timed Elastic Band \citep{rosmann2017integrated} seeks to optimize a timestamped band of poses. DWA and TEB respect dynamics only locally.
+
+\paragraph{Flatness and polynomial trajectories.}
+To simplify the optimization, Differential flatness is used to describe a robot's kinematics using a fewer variables
+and their derivatives \citep{fliess1995flatness}. For differential-drive robots,
+position $(x,y)$ can be used as flat output, where heading and motion commands can be calculated \citep{murray1995flat}. The path will be represented by polynomial segments. Then minimizing the integral of squared snap,
+the rate of change of jerk, gives a quadratic program (QP). By using OSQP
+\citep{stellato2020osqp} this QP will be solved to find the polynomial coefficients.
+
+\paragraph{Recent planning methods.}
+There are other planners like TOPP-RA that
+optimizes speed along a fixed path \citep{pham2018toppra} and graphs of convex sets that jointly plan the
+route and trajectory \citep{marcucci2023gcs}. Graphs of convex sets can
+handle more constraints, but require much more complex optimization.
+\subsection{OTPWR and our objectives}
+\label{sec:otpwr}
+
+Luo et al.\ \citep{luo2024otpwr} use differential flatness to plan in $(x,y)$, combine diagonal heuristic A$^\ast$ with a
+fifth order minimum snap trajectory, and solve it using OSQP. They report faster search than Dijkstra and Euclidean A$^\ast$, a shortest path unlike Manhattan A$^\ast$, and smoother trajectory than DWA. This proposal aims to reproduce
+OTPWR and answers the following four questions:
+
+\begin{itemize*}[label={},itemjoin={\quad}]
+    \item[(Q1)] Can the published results be reproduced?
+    \item[(Q2)] Do they hold on many random and SLAM built maps?
+    \item[(Q3)] Do the trajectories violate motion limits or obstacle clearance between waypoints?
+    \item[(Q4)] Does OTPWR outperform DWA?
+\end{itemize*}
+% ---------------------------------------------------------------
+

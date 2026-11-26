@@ -1,0 +1,33 @@
+1795357297.5774620 [INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/results/roslog/2026-11-22-16-21-37-576196-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-46802
+1795357297.5775805 [INFO] [launch]: Default logging verbosity is set to INFO
+1795357297.6141267 [INFO] [map_server-1]: process started with pid [46808]
+1795357297.6142557 [INFO] [amcl-2]: process started with pid [46810]
+1795357297.6143079 [INFO] [planner_server-3]: process started with pid [46812]
+1795357297.6143594 [INFO] [controller_server-4]: process started with pid [46814]
+1795357305.6259117 [INFO] [lifecycle_manager-5]: process started with pid [46921]
+1795357305.9937866 [lifecycle_manager-5] [INFO] [1795357305.993524225] [lifecycle_manager_dwa]: Creating
+1795357305.9952207 [lifecycle_manager-5] [INFO] [1795357305.995054164] [lifecycle_manager_dwa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+1795357306.6482568 [lifecycle_manager-5] [INFO] [1795357306.648082072] [lifecycle_manager_dwa]: [34m[1mStarting managed nodes bringup...[0m[0m
+1795357306.6484053 [lifecycle_manager-5] [INFO] [1795357306.648115525] [lifecycle_manager_dwa]: [34m[1mConfiguring map_server[0m[0m
+1795357306.6575444 [lifecycle_manager-5] [INFO] [1795357306.657255902] [lifecycle_manager_dwa]: [34m[1mConfiguring amcl[0m[0m
+1795357306.6652193 [lifecycle_manager-5] [INFO] [1795357306.665073019] [lifecycle_manager_dwa]: [34m[1mConfiguring planner_server[0m[0m
+1795357306.6806896 [lifecycle_manager-5] [INFO] [1795357306.680498122] [lifecycle_manager_dwa]: [34m[1mConfiguring controller_server[0m[0m
+1795357306.7066224 [lifecycle_manager-5] [INFO] [1795357306.706320425] [lifecycle_manager_dwa]: [34m[1mActivating map_server[0m[0m
+1795357306.8118443 [lifecycle_manager-5] [INFO] [1795357306.809235249] [lifecycle_manager_dwa]: Server map_server connected with bond.
+1795357306.8120158 [lifecycle_manager-5] [INFO] [1795357306.809291992] [lifecycle_manager_dwa]: [34m[1mActivating amcl[0m[0m
+1795357306.9129231 [lifecycle_manager-5] [INFO] [1795357306.912713327] [lifecycle_manager_dwa]: Server amcl connected with bond.
+1795357306.9130471 [lifecycle_manager-5] [INFO] [1795357306.912755772] [lifecycle_manager_dwa]: [34m[1mActivating planner_server[0m[0m
+1795357309.0712402 [lifecycle_manager-5] [INFO] [1795357309.071064881] [lifecycle_manager_dwa]: Server planner_server connected with bond.
+1795357309.0714028 [lifecycle_manager-5] [INFO] [1795357309.071108239] [lifecycle_manager_dwa]: [34m[1mActivating controller_server[0m[0m
+1795357309.4250269 [lifecycle_manager-5] [INFO] [1795357309.424799611] [lifecycle_manager_dwa]: Server controller_server connected with bond.
+1795357309.4251730 [lifecycle_manager-5] [INFO] [1795357309.424835486] [lifecycle_manager_dwa]: [34m[1mManaged nodes are active[0m[0m
+1795357309.4252315 [lifecycle_manager-5] [INFO] [1795357309.424862015] [lifecycle_manager_dwa]: [34m[1mCreating bond timer...[0m[0m
+1795357467.4922395 [lifecycle_manager-5] [INFO] [1795357467.490531938] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1795357467.4923625 [lifecycle_manager-5] [INFO] [1795357467.490630476] [lifecycle_manager_dwa]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_dwa)
+1795357467.4924562 [lifecycle_manager-5] [INFO] [1795357467.490680998] [lifecycle_manager_dwa]: [34m[1mTerminating bond timer...[0m[0m
+1795357467.5354745 [lifecycle_manager-5] [INFO] [1795357467.535286056] [lifecycle_manager_dwa]: Destroying lifecycle_manager_dwa
+1795357467.6140018 [INFO] [map_server-1]: process has finished cleanly [pid 46808]
+1795357467.6186624 [INFO] [amcl-2]: process has finished cleanly [pid 46810]
+1795357467.6407886 [INFO] [lifecycle_manager-5]: process has finished cleanly [pid 46921]
+1795357467.8143535 [INFO] [controller_server-4]: process has finished cleanly [pid 46814]
+1795357468.0504224 [INFO] [planner_server-3]: process has finished cleanly [pid 46812]

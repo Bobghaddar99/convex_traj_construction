@@ -1,0 +1,5 @@
+[INFO] [1795363780.777202480] [static_transform_publisher_qFqGQFMAWnCXtRW5]: Spinning until stopped - publishing transform
+translation: ('0.000000', '0.000000', '0.000000')
+rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+from 'map' to 'photo_view'
+[INFO] [1795363826.187600594] [rclcpp]: signal_handler(SIGINT/SIGTERM)

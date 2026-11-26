@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+% Layout only (no wording changes): 12 pt Times, double spacing, single column.
+% Page-count knob: margin below. Was 9 body pages at 0.6in; now 0.5in. Under 7 pages -> raise it.
+\usepackage[a4paper,left=0.5in,right=0.5in,top=0.35in,bottom=0.4in,footskip=0.2in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{etoolbox}
+% Keep stacked vectors/matrices at normal row height inside double-spaced text
+\AtBeginEnvironment{bmatrix}{\renewcommand{\arraystretch}{0.55}}
+% Tighter space above/below displayed equations
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{2pt plus 1pt}\setlength\belowdisplayskip{2pt plus 1pt}%
+  \setlength\abovedisplayshortskip{0pt plus 2pt}\setlength\belowdisplayshortskip{2pt plus 2pt}}
+\makeatother
+% Compact headings (smaller and less surrounding space)
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing*{\section}{0pt}{3pt}{0pt}
+\titlespacing*{\subsection}{0pt}{2pt}{0pt}
+\titlespacing*{\paragraph}{0pt}{2pt}{0.6em}
+% Small, single-spaced captions; let floats share pages with text
+\usepackage[font=small,skip=3pt]{caption}
+\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.85}
+\raggedbottom
+\usepackage{array,booktabs}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[authoryear,round]{natbib}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0pt,topsep=2pt,parsep=0pt}
+\usepackage{tabularx} % used in bob/bob.tex
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % used in bob/bob.tex
+\usepackage[hidelinks]{hyperref} % keep this as the last package
+
+\usepackage{setspace}
+\doublespacing
+
+\title{\vspace{-2.2cm}Convex Optimization for Wheeled-Robot Trajectory Planning: A Proposal to Reproduce OTPWR}
+\author{Ibrahim Ghaddar}
+\date{\vspace{-0.8cm}November 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1cm}
+\input{bob/bob}
+\section{Methodology}
+\input{karem/karem_methodology}
+
+\section{Project Progress and Expected Deliverables}
+Across the two grid maps analyzed by \citet{luo2024otpwr}, Dijkstra, Euclidean A* and diagonal A* should each provide the shortest routes they indicate, 12.4853~m and 13.8995~m, whereas Manhattan A* may yield a longer path of 14.4853~m on the second map since its heuristic overestimates the actual price. Diagonal A* should likewise visit far fewer nodes than Dijkstra; this article finds 43.1\% fewer nodes and a 46.6\% shorter search duration on the second map. Search durations rely upon the computer and software utilized, so we will compare the sequence of the four methods instead of the precise measurements in milliseconds. For the trajectory, the QP should output a smooth route through each waypoint with continuous velocity and acceleration, a complete sum lasting for about 65~s, with speeds and accelerations within $\pm0.5$~m/s and $\pm0.2$~m/s$^2$ at the route points.
+
+At the end of this project, we will provide:
+\begin{enumerate}[leftmargin=*,itemsep=0pt]
+\item Python code for Dijkstra plus A* using Euclidean, Manhattan, and diagonal approaches, and for the minimum-snap QP established in CVXPY and optimized using OSQP.
+\item A chart showing route distance, lookup duration and explored nodes across both maps, contrasted with the figures reported by \citet{luo2024otpwr}.
+\item Plots illustrating the path, the velocity and acceleration along $x$ and $y$, plus the commands $v$ and $\omega$, relative to the published trajectory findings.
+\item A list of presumed values and explanation of any discrepancy from the published results, and the concluding presentation.
+\end{enumerate}
+
+\section{Potential Implementation Challenges}
+Certain difficulties could potentially emerge while carrying out the suggested approach. These can involve correctly configuring the grid environment, identifying polynomial parameters for every trajectory section, and appropriately defining the quadratic optimization problem and all its relevant constraints. A further challenge lies in keeping the generated trajectories smooth while meeting the required velocity and acceleration limits. Furthermore, selecting a proper solver in CVXPY and managing potential numerical issues may demand some extra attention. Ultimately, the results obtained will be contrasted with those reported in the original article to detect any discrepancies and assess how well our implementation performs.
+
+\section{AI Use Disclosure}
+AI tools, including ChatGPT and Claude, helped organize and revise the proposal and confirm that it meets the assignment criteria clearly stated in the provided instructions. Claude produced the six-stage process diagram presented in the Methodology section. We independently reviewed referenced studies, developed and understood the optimization approach, and checked every implementation choice and computational result before final submission.
+
+\clearpage % bibliography starts on its own page (not counted in the page limit)
+\bibliographystyle{plainnat}
+\begin{spacing}{1}
+\bibliography{references}
+\end{spacing}
+\end{document}

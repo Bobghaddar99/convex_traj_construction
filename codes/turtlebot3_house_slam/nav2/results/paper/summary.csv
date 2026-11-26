@@ -1,0 +1,4 @@
+setting,goal,result,time_s,rtf,end_to_goal_m,cmd_v_max,cmd_w_max,closest_lidar_m
+paper,A_south_west_room,controller aborted,10.1,0.494,5.89,0.0,0.053,1.001
+paper,B_middle_room,controller aborted,36.3,0.494,0.59,0.7,0.35,0.12
+paper,C_south_east_room,reached,19.6,0.495,0.25,0.71,0.35,0.12

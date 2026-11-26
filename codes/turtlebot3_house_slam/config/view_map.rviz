@@ -1,0 +1,29 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: Map
+      Alpha: 1
+      Enabled: true
+      Value: true
+      Topic: {Value: /map, Durability Policy: Transient Local, Reliability Policy: Reliable, History Policy: Keep Last, Depth: 1}
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Scale: 70
+      X: 2
+      Y: -1
+Window Geometry:
+  X: 40
+  Y: 50
+  Width: 1500
+  Height: 900

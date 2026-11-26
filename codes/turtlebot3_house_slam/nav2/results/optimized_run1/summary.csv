@@ -1,0 +1,4 @@
+setting,goal,result,time_s,rtf,end_to_goal_m,cmd_v_max,cmd_w_max,closest_lidar_m
+optimized_run1,A_south_west_room,controller aborted,10.0,0.496,5.9,0.01,0.142,1.01
+optimized_run1,B_middle_room,controller aborted,27.6,0.497,1.87,1.534,0.35,0.366
+optimized_run1,C_south_east_room,controller aborted,23.5,0.493,0.29,1.964,0.35,0.17

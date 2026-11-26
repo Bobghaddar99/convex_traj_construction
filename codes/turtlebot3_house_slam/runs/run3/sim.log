@@ -1,0 +1,92 @@
+[INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/run3/roslog/2026-11-22-13-58-29-793272-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-7536
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [nogpu.sh-1]: process started with pid [7569]
+[INFO] [create-2]: process started with pid [7571]
+[INFO] [parameter_bridge-3]: process started with pid [7573]
+[INFO] [python3-4]: process started with pid [7575]
+[INFO] [static_transform_publisher-5]: process started with pid [7577]
+[INFO] [static_transform_publisher-6]: process started with pid [7579]
+[INFO] [sync_slam_toolbox_node-7]: process started with pid [7581]
+[INFO] [nogpu.sh-8]: process started with pid [7583]
+[static_transform_publisher-5] [INFO] [1795348709.855534424] [tf_base_scan]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('-0.032000', '0.000000', '0.171000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_footprint' to 'base_scan'
+[static_transform_publisher-6] [INFO] [1795348709.855534704] [tf_base_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'base_footprint' to 'base_link'
+[create-2] [INFO] [1795348709.857586938] [ros_gz_sim]: Requesting list of world names.
+[sync_slam_toolbox_node-7] [INFO] [1795348709.873626938] [slam_toolbox]: Node using stack size 40000000
+[sync_slam_toolbox_node-7] [INFO] [1795348709.915066162] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[sync_slam_toolbox_node-7] [INFO] [1795348709.915329270] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[nogpu.sh-8] Gtk-Message: 13:58:29.979: Failed to load module "canberra-gtk-module"
+[nogpu.sh-8] Gtk-Message: 13:58:29.979: Failed to load module "canberra-gtk-module"
+[nogpu.sh-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="default"]/gui/camera[@name="user_camera"]/pose[@frame=""]:/home/ibrahim/Desktop/convex/turtlebot3_house_slam/worlds/turtlebot3_house.world:L10]: XML Attribute[frame] in element[pose] not defined in SDF.
+[nogpu.sh-8] [INFO] [1795348710.204324003] [rviz2]: Stereo is NOT SUPPORTED
+[nogpu.sh-8] [INFO] [1795348710.204385743] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[nogpu.sh-8] [INFO] [1795348710.254704697] [rviz2]: Stereo is NOT SUPPORTED
+[create-2] [INFO] [1795348710.749764787] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1795348710.749812889] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-2]: process has finished cleanly [pid 7571]
+[parameter_bridge-3] [INFO] [1795348710.866531776] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795348710.867183257] [ros_gz_bridge]: Creating GZ->ROS Bridge: [joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795348710.868868031] [ros_gz_bridge]: Creating GZ->ROS Bridge: [odom (gz.msgs.Odometry) -> wheel_odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795348710.869840969] [ros_gz_bridge]: Creating ROS->GZ Bridge: [house_sim/cmd_vel (geometry_msgs/msg/Twist) -> cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795348710.871538202] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu (gz.msgs.IMU) -> imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1795348710.871874524] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[nogpu.sh-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_burger"]/link[@name="base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/run3/robot.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[nogpu.sh-1] [1;31m[Err] [SystemPaths.cc:526] [0m[1;31mCould not resolve file [[0m[1;31mWood_Floor_Dark.jpg[0m[1;31m][0m[1;31m[0m
+[nogpu.sh-1] [1;31m[Err] [SystemPaths.cc:526] [0m[1;31mCould not resolve file [[0m[1;31mMaple.jpg[0m[1;31m][0m[1;31m[0m
+[sync_slam_toolbox_node-7] Info: clipped range threshold to be within minimum and maximum range!
+[sync_slam_toolbox_node-7] Registering sensor: [Custom Described Lidar]
+[nogpu.sh-8] [INFO] [1795348713.949361755] [rviz2]: Trying to create a map of size 119 x 39 using 1 swatches
+[nogpu.sh-8] [ERROR] [1795348714.019036110] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[nogpu.sh-8] active samplers with a different type refer to the same texture image unit
+[nogpu.sh-8] [INFO] [1795348726.647300881] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[parameter_bridge-3] [INFO] [1795348736.436603340] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[nogpu.sh-8] [INFO] [1795348743.951385212] [rviz2]: Trying to create a map of size 120 x 51 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348745.964809911] [rviz2]: Trying to create a map of size 120 x 56 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348747.948699648] [rviz2]: Trying to create a map of size 120 x 64 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348749.965770862] [rviz2]: Trying to create a map of size 120 x 73 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348751.953089436] [rviz2]: Trying to create a map of size 120 x 75 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348769.965474854] [rviz2]: Trying to create a map of size 134 x 76 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348771.949061404] [rviz2]: Trying to create a map of size 140 x 76 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348773.965124403] [rviz2]: Trying to create a map of size 152 x 76 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348775.947673693] [rviz2]: Trying to create a map of size 155 x 95 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348777.967619544] [rviz2]: Trying to create a map of size 166 x 95 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348779.949045148] [rviz2]: Trying to create a map of size 174 x 95 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348781.967597343] [rviz2]: Trying to create a map of size 178 x 96 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348783.950656934] [rviz2]: Trying to create a map of size 186 x 96 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348785.965428328] [rviz2]: Trying to create a map of size 197 x 96 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348787.951028583] [rviz2]: Trying to create a map of size 202 x 96 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348795.949662773] [rviz2]: Trying to create a map of size 202 x 120 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348805.965192712] [rviz2]: Trying to create a map of size 202 x 135 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348807.952539164] [rviz2]: Trying to create a map of size 202 x 138 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348809.968005517] [rviz2]: Trying to create a map of size 202 x 152 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348835.950047143] [rviz2]: Trying to create a map of size 202 x 178 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348839.953923759] [rviz2]: Trying to create a map of size 243 x 186 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348843.954879511] [rviz2]: Trying to create a map of size 243 x 187 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348845.967886635] [rviz2]: Trying to create a map of size 244 x 187 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348879.951041983] [rviz2]: Trying to create a map of size 244 x 188 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348881.969021644] [rviz2]: Trying to create a map of size 245 x 188 using 1 swatches
+[sync_slam_toolbox_node-7] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[sync_slam_toolbox_node-7] W1122 14:01:23.986748  7657 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[nogpu.sh-8] [INFO] [1795348885.969653008] [rviz2]: Trying to create a map of size 244 x 190 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348887.949826872] [rviz2]: Trying to create a map of size 245 x 190 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348893.970478602] [rviz2]: Trying to create a map of size 246 x 190 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348897.965806665] [rviz2]: Trying to create a map of size 247 x 190 using 1 swatches
+[nogpu.sh-8] [INFO] [1795348903.952893094] [rviz2]: Trying to create a map of size 248 x 190 using 1 swatches
+[INFO] [nogpu.sh-8]: process has finished cleanly [pid 7583]
+[sync_slam_toolbox_node-7] W1122 14:03:41.543612  7657 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[sync_slam_toolbox_node-7] W1122 14:05:27.957536  7657 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[parameter_bridge-3] [INFO] [1795349222.180641340] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-5] [INFO] [1795349222.180637386] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-6] [INFO] [1795349222.180638036] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[sync_slam_toolbox_node-7] [INFO] [1795349222.180638702] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 7573]
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 7577]
+[INFO] [static_transform_publisher-6]: process has finished cleanly [pid 7579]
+[INFO] [sync_slam_toolbox_node-7]: process has finished cleanly [pid 7581]
+[INFO] [python3-4]: process has finished cleanly [pid 7575]
+[INFO] [nogpu.sh-1]: process has finished cleanly [pid 7569]

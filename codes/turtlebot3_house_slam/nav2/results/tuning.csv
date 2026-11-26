@@ -1,0 +1,7 @@
+candidate,params,reached,at_lidar_minimum,time_s
+c1,"{""sim_time"": 1.5}",1,0,159.0
+c2,"{""sim_time"": 1.5, ""PathAlign.forward_point_distance"": 0.325, ""GoalAlign.forward_point_distance"": 0.325}",1,0,158.7
+c3,"{""sim_time"": 1.5, ""PathAlign.forward_point_distance"": 0.325, ""GoalAlign.forward_point_distance"": 0.325, ""PathDist.scale"": 64.0, ""PathAlign.scale"": 64.0}",1,0,161.0
+c4,"{""sim_time"": 1.5, ""PathAlign.forward_point_distance"": 0.325, ""GoalAlign.forward_point_distance"": 0.325, ""BaseObstacle.scale"": 0.1}",0,0,300
+c5,"{""sim_time"": 2.0, ""PathAlign.forward_point_distance"": 0.325, ""GoalAlign.forward_point_distance"": 0.325, ""BaseObstacle.scale"": 0.05}",1,0,163.2
+c6,"{""sim_time"": 1.0, ""PathAlign.forward_point_distance"": 0.325, ""GoalAlign.forward_point_distance"": 0.325, ""PathDist.scale"": 64.0, ""PathAlign.scale"": 64.0}",1,0,158.2

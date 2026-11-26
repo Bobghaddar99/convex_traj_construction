@@ -1,0 +1,37 @@
+planner,setting,goal,run,result,time_s,v_max,v_mean,a_max,a_max_normal,steps_over_limit,of_which_stops_to_zero,a_rms_normal,w_max,alpha_max,path_dev_mean,path_dev_max,end_to_goal,near_contact,below_min,rtf,step
+NavFn,paper,A,1,controller aborted,34.2,0.687,0.124,0.5,0.5,0,0,0.144,0.35,0.87,0.174,0.669,5.69,False,False,0.496,0.0992
+NavFn,paper,A,2,controller aborted,10.0,0.0,0.0,0.0,0.0,0,0,0.0,0.12,0.87,0.022,0.026,5.9,False,False,0.495,0.099
+NavFn,paper,A,3,controller aborted,10.1,0.0,0.0,0.0,0.0,0,0,0.0,0.104,0.87,0.016,0.017,5.9,False,False,0.5,0.1
+NavFn,paper,B,1,controller aborted,35.2,0.71,0.321,4.5,0.5,1,1,0.235,0.35,1.66,0.262,0.495,0.53,True,True,0.494,0.0989
+NavFn,paper,B,2,reached,24.8,0.7,0.435,4.0,0.5,1,1,0.266,0.35,2.06,0.183,0.42,0.24,True,False,0.493,0.0983
+NavFn,paper,B,3,controller aborted,39.7,0.692,0.292,4.3,0.5,1,1,0.219,0.35,1.84,0.253,0.427,0.53,True,False,0.499,0.0998
+NavFn,paper,C,1,reached,19.9,0.71,0.463,6.2,0.5,2,2,0.246,0.35,3.5,0.162,0.571,0.25,True,False,0.497,0.0989
+NavFn,paper,C,2,controller aborted,22.7,0.71,0.354,5.1,0.5,1,1,0.178,0.35,3.27,0.282,0.525,1.34,False,False,0.485,0.0969
+NavFn,paper,C,3,reached,18.9,0.7,0.483,4.1,0.5,1,1,0.226,0.311,2.04,0.143,0.562,0.24,True,True,0.5,0.0995
+NavFn,optimized,A,1,controller aborted,10.0,0.01,0.0,0.1,0.1,0,0,0.014,0.142,0.87,0.017,0.018,5.9,False,False,0.496,0.0992
+NavFn,optimized,A,2,controller aborted,10.1,0.02,0.002,0.2,0.2,0,0,0.024,0.35,0.89,0.029,0.037,5.9,False,False,0.49,0.0981
+NavFn,optimized,A,3,controller aborted,10.1,0.0,0.0,0.0,0.0,0,0,0.0,0.35,0.87,0.014,0.019,5.89,False,False,0.5,0.1
+NavFn,optimized,B,1,controller aborted,27.6,1.534,0.378,0.5,0.5,0,0,0.32,0.35,0.87,0.1,0.48,1.87,False,False,0.497,0.0994
+NavFn,optimized,B,2,controller aborted,22.1,1.468,0.425,7.98,0.5,1,1,0.313,0.35,3.24,0.154,0.327,2.07,False,False,0.486,0.0972
+NavFn,optimized,B,3,controller aborted,22.8,1.35,0.4,9.3,0.5,1,1,0.315,0.35,3.41,0.124,0.248,2.09,False,False,0.5,0.0999
+NavFn,optimized,C,1,controller aborted,23.5,1.964,0.413,16.14,0.5,2,2,0.296,0.35,3.5,0.076,0.455,0.29,False,False,0.493,0.0987
+NavFn,optimized,C,2,reached,15.8,1.903,0.616,14.63,0.5,1,1,0.36,0.35,1.83,0.084,0.376,0.22,False,False,0.489,0.0973
+NavFn,optimized,C,3,reached,13.8,1.92,0.71,14.2,0.5,1,1,0.385,0.35,1.66,0.09,0.353,0.23,False,False,0.5,0.0993
+Diagonal A*,paper,A,1,controller aborted,10.0,0.01,0.001,0.1,0.1,0,0,0.037,0.166,0.87,0.009,0.011,5.89,False,False,0.496,0.099
+Diagonal A*,paper,A,2,controller aborted,10.1,0.0,0.0,0.0,0.0,0,0,0.0,0.35,0.87,0.01,0.018,5.89,False,False,0.494,0.0988
+Diagonal A*,paper,A,3,controller aborted,10.1,0.01,0.0,0.1,0.1,0,0,0.02,0.07,0.7,0.009,0.009,5.9,False,False,0.498,0.0996
+Diagonal A*,paper,B,1,reached,32.2,0.7,0.349,6.3,0.5,2,2,0.248,0.35,1.96,0.12,0.426,0.26,False,False,0.493,0.0984
+Diagonal A*,paper,B,2,controller aborted,29.3,0.7,0.294,6.4,0.5,3,3,0.23,0.35,1.84,0.165,0.432,1.8,True,False,0.481,0.0962
+Diagonal A*,paper,B,3,controller aborted,27.8,0.71,0.306,6.5,0.5,2,2,0.23,0.35,3.36,0.179,0.398,1.81,True,False,0.499,0.0999
+Diagonal A*,paper,C,1,reached,19.0,0.71,0.482,4.6,0.5,1,1,0.234,0.35,2.32,0.167,0.531,0.24,True,False,0.493,0.098
+Diagonal A*,paper,C,2,controller aborted,21.9,0.7,0.361,4.2,0.5,1,1,0.192,0.35,1.71,0.231,0.482,1.38,False,False,0.485,0.097
+Diagonal A*,paper,C,3,reached,20.4,0.71,0.458,5.5,0.5,1,1,0.231,0.35,3.5,0.148,0.466,0.24,False,False,0.499,0.0993
+Diagonal A*,optimized,A,1,controller aborted,10.1,0.0,0.0,0.0,0.0,0,0,0.0,0.07,0.7,0.006,0.006,5.9,False,False,0.493,0.0986
+Diagonal A*,optimized,A,2,controller aborted,10.0,0.0,0.0,0.0,0.0,0,0,0.0,0.35,0.87,0.002,0.006,5.88,False,False,0.497,0.0994
+Diagonal A*,optimized,A,3,controller aborted,10.1,0.0,0.0,0.0,0.0,0,0,0.0,0.052,0.52,0.007,0.007,5.9,False,False,0.499,0.0998
+Diagonal A*,optimized,B,1,controller aborted,24.1,1.2,0.378,0.5,0.5,0,0,0.334,0.35,0.88,0.047,0.236,2.03,False,False,0.494,0.0989
+Diagonal A*,optimized,B,2,controller aborted,14.0,0.57,0.082,0.5,0.5,0,0,0.191,0.35,0.87,0.036,0.123,3.12,False,False,0.499,0.0997
+Diagonal A*,optimized,B,3,controller aborted,24.3,1.3,0.377,0.5,0.5,0,0,0.332,0.35,0.87,0.071,0.169,2.09,False,False,0.498,0.0997
+Diagonal A*,optimized,C,1,controller aborted,13.3,0.4,0.058,0.5,0.5,0,0,0.181,0.35,1.0,0.007,0.02,7.78,False,False,0.498,0.0997
+Diagonal A*,optimized,C,2,controller aborted,12.9,0.452,0.06,0.5,0.5,0,0,0.167,0.35,0.87,0.009,0.042,7.78,False,False,0.498,0.0997
+Diagonal A*,optimized,C,3,controller aborted,12.1,0.585,0.082,0.5,0.5,0,0,0.194,0.35,0.87,0.157,0.188,7.52,False,False,0.498,0.0997

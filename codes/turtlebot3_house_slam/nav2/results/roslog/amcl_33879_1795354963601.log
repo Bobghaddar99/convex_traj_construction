@@ -1,0 +1,30 @@
+[INFO] [1795354963.616164368] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795354963.616482293] [amcl]: Creating
+[INFO] [1795354972.626142053] [amcl]: Configuring
+[INFO] [1795354972.626194758] [amcl]: initTransforms
+[INFO] [1795354972.629983672] [amcl]: initPubSub
+[INFO] [1795354972.632032944] [amcl]: Subscribed to map topic.
+[INFO] [1795354972.671994323] [amcl]: Received a 300 X 214 map @ 0.050 m/pix
+[INFO] [1795354972.773854374] [amcl]: Activating
+[INFO] [1795354972.773882357] [amcl]: initialPoseReceived
+[INFO] [1795354972.773955366] [amcl]: Setting pose (3601.486000): 0.000 0.000 0.000
+[INFO] [1795354972.774440026] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1795354973.082664079] [amcl]: createLaserObject
+[INFO] [1795354974.686048445] [amcl]: Message Filter dropping message: frame 'base_scan' at time 3601.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795354985.106137735] [amcl]: initialPoseReceived
+[WARN] [1795354985.106287064] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 3607.601000 but the latest data is at time 3607.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795354985.106350481] [amcl]: Setting pose (3607.601000): 0.000 0.000 0.000
+[INFO] [1795355013.114386053] [amcl]: initialPoseReceived
+[INFO] [1795355013.114434659] [amcl]: Setting pose (3621.520000): -0.000 0.000 0.000
+[INFO] [1795355065.887991820] [amcl]: initialPoseReceived
+[WARN] [1795355065.888172267] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 3647.821000 but the latest data is at time 3647.820000, when looking up transform from frame [base_footprint] to frame [odom])
+[INFO] [1795355065.888217702] [amcl]: Setting pose (3647.821000): 0.000 0.000 0.000
+[INFO] [1795355329.001125314] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795355329.001178043] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1795355329.001225146] [amcl]: Deactivating
+[INFO] [1795355329.001242769] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1795355329.011506390] [amcl]: Cleaning up
+[INFO] [1795355329.014802361] [amcl]: Destroying bond (amcl) to lifecycle manager.

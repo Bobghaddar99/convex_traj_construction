@@ -1,0 +1,17 @@
+1795355345.3334217 [INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/results/roslog/2026-11-22-15-49-05-332703-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-37230
+1795355345.3335381 [INFO] [launch]: Default logging verbosity is set to INFO
+1795355345.3688850 [INFO] [nogpu.sh-1]: process started with pid [37233]
+1795355345.3690128 [INFO] [create-2]: process started with pid [37235]
+1795355345.3690846 [INFO] [parameter_bridge-3]: process started with pid [37237]
+1795355345.3691370 [INFO] [python3-4]: process started with pid [37239]
+1795355345.3691776 [INFO] [static_transform_publisher-5]: process started with pid [37241]
+1795355345.3692117 [INFO] [static_transform_publisher-6]: process started with pid [37243]
+1795355345.3884668 [static_transform_publisher-5] [INFO] [1795355345.388158935] [tf_base_scan]: Spinning until stopped - publishing transform
+1795355345.3886967 [static_transform_publisher-5] translation: ('-0.032000', '0.000000', '0.171000')
+1795355345.3887539 [static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1795355345.3887925 [static_transform_publisher-5] from 'base_footprint' to 'base_scan'
+1795355345.3891423 [static_transform_publisher-6] [INFO] [1795355345.388379520] [tf_base_link]: Spinning until stopped - publishing transform
+1795355345.3892179 [static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+1795355345.3892562 [static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+1795355345.3892901 [static_transform_publisher-6] from 'base_footprint' to 'base_link'
+1795355346.1657989 [INFO] [create-2]: process has finished cleanly [pid 37235]

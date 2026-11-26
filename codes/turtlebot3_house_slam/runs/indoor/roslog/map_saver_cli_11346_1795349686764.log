@@ -1,0 +1,16 @@
+[INFO] [1795349686.777760769] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795349686.777831972] [map_saver]: Creating
+[INFO] [1795349686.777917317] [map_saver]: Configuring
+[INFO] [1795349686.778628814] [map_saver]: Saving map from 'map' topic to '/home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/checkpoint_24' file
+[WARN] [1795349686.778644933] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+[WARN] [1795349686.778651600] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1795349686.790572311] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1795349686.790611903] [map_io]: Received a 298 X 211 map @ 0.05 m/pix
+[INFO] [1795349686.832913814] [map_io]: Writing map occupancy data to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/checkpoint_24.pgm
+[INFO] [1795349686.833387782] [map_io]: Writing map metadata to /home/ibrahim/Desktop/convex/turtlebot3_house_slam/runs/indoor/checkpoint_24.yaml
+[INFO] [1795349686.833477805] [map_io]: Map saved
+[INFO] [1795349686.833483621] [map_saver]: Map saved successfully
+[INFO] [1795349686.834154008] [map_saver]: Destroying

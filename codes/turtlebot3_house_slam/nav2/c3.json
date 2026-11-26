@@ -1,0 +1,7 @@
+{
+  "sim_time": 1.5,
+  "PathAlign.forward_point_distance": 0.325,
+  "GoalAlign.forward_point_distance": 0.325,
+  "PathDist.scale": 64.0,
+  "PathAlign.scale": 64.0
+}

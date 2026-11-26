@@ -1,0 +1,28 @@
+1795354652.1037092 [INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/results/roslog/2026-11-22-15-37-32-102497-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-32325
+1795354652.1039009 [INFO] [launch]: Default logging verbosity is set to INFO
+1795354652.1915226 [INFO] [map_server-1]: process started with pid [32328]
+1795354652.1917150 [INFO] [amcl-2]: process started with pid [32330]
+1795354652.1918082 [INFO] [planner_server-3]: process started with pid [32332]
+1795354652.1918836 [INFO] [controller_server-4]: process started with pid [32334]
+1795354652.1919587 [INFO] [lifecycle_manager-5]: process started with pid [32336]
+1795354652.5624292 [lifecycle_manager-5] [INFO] [1795354652.561136590] [lifecycle_manager_dwa]: Creating
+1795354652.5657558 [lifecycle_manager-5] [INFO] [1795354652.565526187] [lifecycle_manager_dwa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+1795354652.5794086 [lifecycle_manager-5] [INFO] [1795354652.579261984] [lifecycle_manager_dwa]: [34m[1mStarting managed nodes bringup...[0m[0m
+1795354652.5796638 [lifecycle_manager-5] [INFO] [1795354652.579298129] [lifecycle_manager_dwa]: [34m[1mConfiguring map_server[0m[0m
+1795354734.7485433 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1795354734.7542369 [INFO] [lifecycle_manager-5]: sending signal 'SIGINT' to process[lifecycle_manager-5]
+1795354734.7558448 [INFO] [controller_server-4]: sending signal 'SIGINT' to process[controller_server-4]
+1795354734.7565444 [INFO] [planner_server-3]: sending signal 'SIGINT' to process[planner_server-3]
+1795354734.7571635 [INFO] [amcl-2]: sending signal 'SIGINT' to process[amcl-2]
+1795354734.7588959 [INFO] [map_server-1]: sending signal 'SIGINT' to process[map_server-1]
+1795354734.7592196 [lifecycle_manager-5] [INFO] [1795354734.748355582] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1795354734.7593122 [lifecycle_manager-5] [INFO] [1795354734.748423735] [lifecycle_manager_dwa]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_dwa)
+1795354734.7617173 [ERROR] [controller_server-4]: process has died [pid 32334, exit code -2, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args -r __node:=controller_server --params-file /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/params_paper.yaml --params-file /tmp/launch_params_q2p372ez -r cmd_vel:=/house_sim/cmd_vel'].
+1795354734.7622266 [ERROR] [planner_server-3]: process has died [pid 32332, exit code -2, cmd '/opt/ros/humble/lib/nav2_planner/planner_server --ros-args -r __node:=planner_server --params-file /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/params_paper.yaml --params-file /tmp/launch_params_fdqauheo'].
+1795354734.7628155 [ERROR] [map_server-1]: process has died [pid 32328, exit code -2, cmd '/opt/ros/humble/lib/nav2_map_server/map_server --ros-args -r __node:=map_server --params-file /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/params_paper.yaml --params-file /tmp/launch_params_tmbxl21x'].
+1795354734.7636261 [ERROR] [amcl-2]: process has died [pid 32330, exit code -2, cmd '/opt/ros/humble/lib/nav2_amcl/amcl --ros-args -r __node:=amcl --params-file /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/params_paper.yaml --params-file /tmp/launch_params_e_f7d2qn'].
+1795354739.7567966 [ERROR] [lifecycle_manager-5]: process[lifecycle_manager-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1795354739.7572861 [INFO] [lifecycle_manager-5]: sending signal 'SIGTERM' to process[lifecycle_manager-5]
+1795354744.7567713 [ERROR] [lifecycle_manager-5]: process[lifecycle_manager-5] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1795354744.7571120 [INFO] [lifecycle_manager-5]: sending signal 'SIGKILL' to process[lifecycle_manager-5]
+1795354744.7596166 [ERROR] [lifecycle_manager-5]: process has died [pid 32336, exit code -9, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args -r __node:=lifecycle_manager_dwa --params-file /tmp/launch_params_f1ox20lz'].

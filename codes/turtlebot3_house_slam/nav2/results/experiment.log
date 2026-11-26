@@ -1,0 +1,75 @@
+wrote params_c1.yaml
+nav2 active (c1)
+{'setting': 'tuning_c1', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.495, 'end_to_goal_m': 4.66, 'cmd_v_max': 0.0, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.973}
+{'setting': 'tuning_c1', 'goal': 'T2_east_room', 'result': 'reached', 'time_s': 9.0, 'rtf': 0.5, 'end_to_goal_m': 0.47, 'cmd_v_max': 1.452, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.278}
+TUNING {'candidate': 'c1', 'params': '{"sim_time": 1.5}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 159.0}
+wrote params_c2.yaml
+nav2 active (c2)
+{'setting': 'tuning_c2', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.498, 'end_to_goal_m': 4.66, 'cmd_v_max': 0.0, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.982}
+{'setting': 'tuning_c2', 'goal': 'T2_east_room', 'result': 'reached', 'time_s': 8.7, 'rtf': 0.498, 'end_to_goal_m': 0.51, 'cmd_v_max': 1.44, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.188}
+TUNING {'candidate': 'c2', 'params': '{"sim_time": 1.5, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 158.7}
+wrote params_c3.yaml
+nav2 active (c3)
+{'setting': 'tuning_c3', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.499, 'end_to_goal_m': 4.65, 'cmd_v_max': 0.0, 'cmd_w_max': 0.052, 'closest_lidar_m': 1.007}
+{'setting': 'tuning_c3', 'goal': 'T2_east_room', 'result': 'reached', 'time_s': 11.0, 'rtf': 0.5, 'end_to_goal_m': 0.24, 'cmd_v_max': 1.32, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.276}
+TUNING {'candidate': 'c3', 'params': '{"sim_time": 1.5, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325, "PathDist.scale": 64.0, "PathAlign.scale": 64.0}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 161.0}
+wrote params_c4.yaml
+nav2 active (c4)
+{'setting': 'tuning_c4', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.499, 'end_to_goal_m': 4.65, 'cmd_v_max': 0.0, 'cmd_w_max': 0.296, 'closest_lidar_m': 0.978}
+{'setting': 'tuning_c4', 'goal': 'T2_east_room', 'result': 'controller aborted', 'time_s': 12.7, 'rtf': 0.499, 'end_to_goal_m': 7.43, 'cmd_v_max': 0.72, 'cmd_w_max': 0.264, 'closest_lidar_m': 0.599}
+TUNING {'candidate': 'c4', 'params': '{"sim_time": 1.5, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325, "BaseObstacle.scale": 0.1}', 'reached': 0, 'at_lidar_minimum': 0, 'time_s': 300}
+wrote params_c5.yaml
+nav2 active (c5)
+{'setting': 'tuning_c5', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'rtf': 0.497, 'end_to_goal_m': 4.64, 'cmd_v_max': 0.0, 'cmd_w_max': 0.178, 'closest_lidar_m': 1.016}
+{'setting': 'tuning_c5', 'goal': 'T2_east_room', 'result': 'reached', 'time_s': 13.2, 'rtf': 0.497, 'end_to_goal_m': 0.25, 'cmd_v_max': 1.06, 'cmd_w_max': 0.284, 'closest_lidar_m': 0.227}
+TUNING {'candidate': 'c5', 'params': '{"sim_time": 2.0, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325, "BaseObstacle.scale": 0.05}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 163.2}
+wrote params_c6.yaml
+nav2 active (c6)
+{'setting': 'tuning_c6', 'goal': 'T1_north_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'rtf': 0.495, 'end_to_goal_m': 4.64, 'cmd_v_max': 0.0, 'cmd_w_max': 0.191, 'closest_lidar_m': 0.995}
+{'setting': 'tuning_c6', 'goal': 'T2_east_room', 'result': 'reached', 'time_s': 8.2, 'rtf': 0.495, 'end_to_goal_m': 0.48, 'cmd_v_max': 1.97, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.215}
+TUNING {'candidate': 'c6', 'params': '{"sim_time": 1.0, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325, "PathDist.scale": 64.0, "PathAlign.scale": 64.0}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 158.2}
+wrote params_optimized.yaml
+CHOSEN {'candidate': 'c6', 'params': '{"sim_time": 1.0, "PathAlign.forward_point_distance": 0.325, "GoalAlign.forward_point_distance": 0.325, "PathDist.scale": 64.0, "PathAlign.scale": 64.0}', 'reached': 1, 'at_lidar_minimum': 0, 'time_s': 158.2}
+nav2 active (paper)
+{'setting': 'paper_run1', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 34.2, 'rtf': 0.496, 'end_to_goal_m': 5.69, 'cmd_v_max': 0.687, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.475}
+{'setting': 'paper_run1', 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 35.2, 'rtf': 0.494, 'end_to_goal_m': 0.53, 'cmd_v_max': 0.71, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.0}
+{'setting': 'paper_run1', 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 19.9, 'rtf': 0.497, 'end_to_goal_m': 0.25, 'cmd_v_max': 0.71, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.122}
+nav2 active (optimized)
+{'setting': 'optimized_run1', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'rtf': 0.496, 'end_to_goal_m': 5.9, 'cmd_v_max': 0.01, 'cmd_w_max': 0.142, 'closest_lidar_m': 1.01}
+{'setting': 'optimized_run1', 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 27.6, 'rtf': 0.497, 'end_to_goal_m': 1.87, 'cmd_v_max': 1.534, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.366}
+{'setting': 'optimized_run1', 'goal': 'C_south_east_room', 'result': 'controller aborted', 'time_s': 23.5, 'rtf': 0.493, 'end_to_goal_m': 0.29, 'cmd_v_max': 1.964, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.17}
+nav2 active (paper)
+{'setting': 'paper_run2', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'rtf': 0.495, 'end_to_goal_m': 5.9, 'cmd_v_max': 0.0, 'cmd_w_max': 0.12, 'closest_lidar_m': 0.99}
+{'setting': 'paper_run2', 'goal': 'B_middle_room', 'result': 'reached', 'time_s': 24.8, 'rtf': 0.493, 'end_to_goal_m': 0.24, 'cmd_v_max': 0.7, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.12}
+{'setting': 'paper_run2', 'goal': 'C_south_east_room', 'result': 'controller aborted', 'time_s': 22.7, 'rtf': 0.485, 'end_to_goal_m': 1.34, 'cmd_v_max': 0.71, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.183}
+nav2 active (optimized)
+{'setting': 'optimized_run2', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.49, 'end_to_goal_m': 5.9, 'cmd_v_max': 0.02, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.981}
+{'setting': 'optimized_run2', 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 22.1, 'rtf': 0.486, 'end_to_goal_m': 2.07, 'cmd_v_max': 1.468, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.38}
+{'setting': 'optimized_run2', 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 15.8, 'rtf': 0.489, 'end_to_goal_m': 0.22, 'cmd_v_max': 1.903, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.214}
+nav2 active (paper)
+{'setting': 'paper_run3', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.5, 'end_to_goal_m': 5.9, 'cmd_v_max': 0.0, 'cmd_w_max': 0.104, 'closest_lidar_m': 0.995}
+{'setting': 'paper_run3', 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 39.7, 'rtf': 0.499, 'end_to_goal_m': 0.53, 'cmd_v_max': 0.692, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.12}
+{'setting': 'paper_run3', 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 18.9, 'rtf': 0.5, 'end_to_goal_m': 0.24, 'cmd_v_max': 0.7, 'cmd_w_max': 0.311, 'closest_lidar_m': 0.0}
+nav2 active (optimized)
+{'setting': 'optimized_run3', 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'rtf': 0.5, 'end_to_goal_m': 5.89, 'cmd_v_max': 0.0, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.978}
+{'setting': 'optimized_run3', 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 22.8, 'rtf': 0.5, 'end_to_goal_m': 2.09, 'cmd_v_max': 1.35, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.338}
+{'setting': 'optimized_run3', 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 13.8, 'rtf': 0.5, 'end_to_goal_m': 0.23, 'cmd_v_max': 1.92, 'cmd_w_max': 0.35, 'closest_lidar_m': 0.191}
+{'setting': 'paper', 'run': 1, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 34.2, 'v_mean': 0.124, 'v_max': 0.687, 'v_max_measured': 0.687, 'a_max': 0.5, 'a_max_measured': 0.5, 'a_rms': 0.144, 'w_max': 0.35, 'w_max_measured': 0.352, 'alpha_max': 0.872, 'alpha_max_measured': 0.909, 'speed_at_stop': 0.0, 'control_step_s': 0.0992, 'closest_lidar_m': 0.475, 'travelled_m': 4.21}
+{'setting': 'paper', 'run': 1, 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 35.2, 'v_mean': 0.321, 'v_max': 0.71, 'v_max_measured': 0.71, 'a_max': 4.5, 'a_max_measured': 4.5, 'a_rms': 0.335, 'w_max': 0.35, 'w_max_measured': 0.353, 'alpha_max': 1.662, 'alpha_max_measured': 0.884, 'speed_at_stop': 0.0, 'control_step_s': 0.0989, 'closest_lidar_m': 0.0, 'travelled_m': 11.23}
+{'setting': 'paper', 'run': 1, 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 19.9, 'v_mean': 0.463, 'v_max': 0.71, 'v_max_measured': 0.71, 'a_max': 6.2, 'a_max_measured': 6.2, 'a_rms': 0.557, 'w_max': 0.35, 'w_max_measured': 0.35, 'alpha_max': 3.5, 'alpha_max_measured': 1.089, 'speed_at_stop': 0.09, 'control_step_s': 0.0989, 'closest_lidar_m': 0.122, 'travelled_m': 9.15}
+{'setting': 'paper', 'run': 2, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'v_mean': 0.0, 'v_max': 0.0, 'v_max_measured': 0.0, 'a_max': 0.0, 'a_max_measured': 0.0, 'a_rms': 0.0, 'w_max': 0.12, 'w_max_measured': 0.119, 'alpha_max': 0.87, 'alpha_max_measured': 0.89, 'speed_at_stop': 0.0, 'control_step_s': 0.099, 'closest_lidar_m': 0.99, 'travelled_m': 0.0}
+{'setting': 'paper', 'run': 2, 'goal': 'B_middle_room', 'result': 'reached', 'time_s': 24.8, 'v_mean': 0.435, 'v_max': 0.7, 'v_max_measured': 0.7, 'a_max': 4.0, 'a_max_measured': 4.0, 'a_rms': 0.366, 'w_max': 0.35, 'w_max_measured': 0.351, 'alpha_max': 2.062, 'alpha_max_measured': 1.097, 'speed_at_stop': 0.275, 'control_step_s': 0.0983, 'closest_lidar_m': 0.12, 'travelled_m': 10.73}
+{'setting': 'paper', 'run': 2, 'goal': 'C_south_east_room', 'result': 'controller aborted', 'time_s': 22.7, 'v_mean': 0.354, 'v_max': 0.71, 'v_max_measured': 0.71, 'a_max': 5.1, 'a_max_measured': 5.1, 'a_rms': 0.378, 'w_max': 0.35, 'w_max_measured': 0.352, 'alpha_max': 3.266, 'alpha_max_measured': 1.11, 'speed_at_stop': 0.0, 'control_step_s': 0.0969, 'closest_lidar_m': 0.183, 'travelled_m': 7.96}
+{'setting': 'paper', 'run': 3, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'v_mean': 0.0, 'v_max': 0.0, 'v_max_measured': 0.0, 'a_max': 0.0, 'a_max_measured': 0.0, 'a_rms': 0.0, 'w_max': 0.104, 'w_max_measured': 0.105, 'alpha_max': 0.87, 'alpha_max_measured': 0.885, 'speed_at_stop': 0.0, 'control_step_s': 0.1, 'closest_lidar_m': 0.995, 'travelled_m': 0.0}
+{'setting': 'paper', 'run': 3, 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 39.7, 'v_mean': 0.292, 'v_max': 0.692, 'v_max_measured': 0.692, 'a_max': 4.3, 'a_max_measured': 4.3, 'a_rms': 0.307, 'w_max': 0.35, 'w_max_measured': 0.351, 'alpha_max': 1.842, 'alpha_max_measured': 1.267, 'speed_at_stop': 0.063, 'control_step_s': 0.0998, 'closest_lidar_m': 0.12, 'travelled_m': 11.51}
+{'setting': 'paper', 'run': 3, 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 18.9, 'v_mean': 0.483, 'v_max': 0.7, 'v_max_measured': 0.696, 'a_max': 4.1, 'a_max_measured': 4.1, 'a_rms': 0.374, 'w_max': 0.311, 'w_max_measured': 0.308, 'alpha_max': 2.042, 'alpha_max_measured': 0.917, 'speed_at_stop': 0.08, 'control_step_s': 0.0995, 'closest_lidar_m': 0.0, 'travelled_m': 8.98}
+{'setting': 'optimized', 'run': 1, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.0, 'v_mean': 0.0, 'v_max': 0.01, 'v_max_measured': 0.01, 'a_max': 0.1, 'a_max_measured': 0.1, 'a_rms': 0.014, 'w_max': 0.142, 'w_max_measured': 0.142, 'alpha_max': 0.871, 'alpha_max_measured': 0.858, 'speed_at_stop': 0.0, 'control_step_s': 0.0992, 'closest_lidar_m': 1.01, 'travelled_m': 0.0}
+{'setting': 'optimized', 'run': 1, 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 27.6, 'v_mean': 0.378, 'v_max': 1.534, 'v_max_measured': 1.531, 'a_max': 0.5, 'a_max_measured': 0.51, 'a_rms': 0.32, 'w_max': 0.35, 'w_max_measured': 0.351, 'alpha_max': 0.874, 'alpha_max_measured': 0.971, 'speed_at_stop': 0.0, 'control_step_s': 0.0994, 'closest_lidar_m': 0.366, 'travelled_m': 10.34}
+{'setting': 'optimized', 'run': 1, 'goal': 'C_south_east_room', 'result': 'controller aborted', 'time_s': 23.5, 'v_mean': 0.413, 'v_max': 1.964, 'v_max_measured': 1.964, 'a_max': 16.141, 'a_max_measured': 16.141, 'a_rms': 1.098, 'w_max': 0.35, 'w_max_measured': 0.359, 'alpha_max': 3.5, 'alpha_max_measured': 0.98, 'speed_at_stop': 0.0, 'control_step_s': 0.0987, 'closest_lidar_m': 0.17, 'travelled_m': 9.54}
+{'setting': 'optimized', 'run': 2, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'v_mean': 0.002, 'v_max': 0.02, 'v_max_measured': 0.02, 'a_max': 0.2, 'a_max_measured': 0.2, 'a_rms': 0.024, 'w_max': 0.35, 'w_max_measured': 0.35, 'alpha_max': 0.891, 'alpha_max_measured': 0.907, 'speed_at_stop': 0.0, 'control_step_s': 0.0981, 'closest_lidar_m': 0.981, 'travelled_m': 0.02}
+{'setting': 'optimized', 'run': 2, 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 22.1, 'v_mean': 0.425, 'v_max': 1.468, 'v_max_measured': 1.458, 'a_max': 7.98, 'a_max_measured': 7.98, 'a_rms': 0.615, 'w_max': 0.35, 'w_max_measured': 0.351, 'alpha_max': 3.239, 'alpha_max_measured': 1.21, 'speed_at_stop': 0.0, 'control_step_s': 0.0972, 'closest_lidar_m': 0.38, 'travelled_m': 9.28}
+{'setting': 'optimized', 'run': 2, 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 15.8, 'v_mean': 0.616, 'v_max': 1.903, 'v_max_measured': 1.882, 'a_max': 14.633, 'a_max_measured': 14.633, 'a_rms': 1.204, 'w_max': 0.35, 'w_max_measured': 0.354, 'alpha_max': 1.832, 'alpha_max_measured': 1.192, 'speed_at_stop': 0.25, 'control_step_s': 0.0973, 'closest_lidar_m': 0.214, 'travelled_m': 9.59}
+{'setting': 'optimized', 'run': 3, 'goal': 'A_south_west_room', 'result': 'controller aborted', 'time_s': 10.1, 'v_mean': 0.0, 'v_max': 0.0, 'v_max_measured': 0.0, 'a_max': 0.0, 'a_max_measured': 0.0, 'a_rms': 0.0, 'w_max': 0.35, 'w_max_measured': 0.35, 'alpha_max': 0.87, 'alpha_max_measured': 0.931, 'speed_at_stop': 0.0, 'control_step_s': 0.1, 'closest_lidar_m': 0.978, 'travelled_m': 0.0}
+{'setting': 'optimized', 'run': 3, 'goal': 'B_middle_room', 'result': 'controller aborted', 'time_s': 22.8, 'v_mean': 0.4, 'v_max': 1.35, 'v_max_measured': 1.33, 'a_max': 9.3, 'a_max_measured': 9.3, 'a_rms': 0.692, 'w_max': 0.35, 'w_max_measured': 0.35, 'alpha_max': 3.413, 'alpha_max_measured': 0.933, 'speed_at_stop': 0.0, 'control_step_s': 0.0999, 'closest_lidar_m': 0.338, 'travelled_m': 8.88}
+{'setting': 'optimized', 'run': 3, 'goal': 'C_south_east_room', 'result': 'reached', 'time_s': 13.8, 'v_mean': 0.71, 'v_max': 1.92, 'v_max_measured': 1.898, 'a_max': 14.2, 'a_max_measured': 14.2, 'a_rms': 1.268, 'w_max': 0.35, 'w_max_measured': 0.359, 'alpha_max': 1.662, 'alpha_max_measured': 0.881, 'speed_at_stop': 0.23, 'control_step_s': 0.0993, 'closest_lidar_m': 0.191, 'travelled_m': 9.52}
+EXPERIMENT_END rc=0

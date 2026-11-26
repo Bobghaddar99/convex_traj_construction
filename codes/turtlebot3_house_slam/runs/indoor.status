@@ -1,0 +1,6 @@
+gazebo is isolated from the GPU
+driver rc=0
+map save rc=0
+posegraph rc=0
+FINISHED
+STOPPED

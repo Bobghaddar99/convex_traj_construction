@@ -1,0 +1,48 @@
+[INFO] [1795356559.319910163] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795356559.320879529] [planner_server]: Creating
+[INFO] [1795356559.325260100] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795356559.325573954] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1795356567.349374630] [planner_server]: Configuring
+[INFO] [1795356567.349398737] [global_costmap.global_costmap]: Configuring
+[INFO] [1795356567.351924229] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1795356567.353819089] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1795356567.354595750] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1795356567.354616540] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795356567.354800791] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1795356567.356190057] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795356567.356211366] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1795356567.356524064] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795356567.361211210] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1795356567.361252915] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1795356567.361646477] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1795356567.397680733] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 300 X 214 at 0.050000 m/pix
+[INFO] [1795356567.604640762] [planner_server]: Activating
+[INFO] [1795356567.604703290] [global_costmap.global_costmap]: Activating
+[INFO] [1795356567.604712210] [global_costmap.global_costmap]: Checking transform
+[INFO] [1795356567.604766475] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 603.660000, but only time 604.600000 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795356568.104931033] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 603.900000 but the earliest data is at time 604.600000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795356568.604834988] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 604.140000 but the earliest data is at time 604.600000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795356569.104831466] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 604.380000 but the earliest data is at time 604.600000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1795356569.604906902] [global_costmap.global_costmap]: start
+[INFO] [1795356570.655878372] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1795356570.656353067] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1795356580.316009747] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795356608.278154107] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795356666.283175973] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1795356716.774377661] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795356716.774431281] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[INFO] [1795356716.774487587] [planner_server]: Deactivating
+[INFO] [1795356716.774511149] [global_costmap.global_costmap]: Deactivating
+[INFO] [1795356717.605105165] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[INFO] [1795356717.605140032] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1795356717.615294046] [planner_server]: Cleaning up
+[INFO] [1795356717.622075516] [global_costmap.global_costmap]: Cleaning up
+[INFO] [1795356717.624263637] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[INFO] [1795356717.624374361] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[INFO] [1795356717.627350745] [planner_server]: Destroying bond (planner_server) to lifecycle manager.

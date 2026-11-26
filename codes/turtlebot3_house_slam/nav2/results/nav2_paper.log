@@ -1,0 +1,208 @@
+[INFO] [launch]: All log files can be found below /home/ibrahim/Desktop/convex/turtlebot3_house_slam/nav2/results/roslog/2026-11-22-16-31-52-835823-ibrahim-Victus-by-HP-Gaming-Laptop-15-fa0xxx-49948
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [49954]
+[INFO] [amcl-2]: process started with pid [49956]
+[INFO] [planner_server-3]: process started with pid [49958]
+[INFO] [controller_server-4]: process started with pid [49960]
+[amcl-2] [INFO] [1795357912.891279967] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1795357912.891658169] [amcl]: Creating
+[planner_server-3] [INFO] [1795357912.893240956] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1795357912.894202718] [planner_server]: Creating
+[controller_server-4] [INFO] [1795357912.897257136] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1795357912.898532113] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1795357912.898605704] [map_server]: Creating
+[controller_server-4] [INFO] [1795357912.899416135] [controller_server]: Creating controller server
+[planner_server-3] [INFO] [1795357912.900199063] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1795357912.900426739] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-4] [INFO] [1795357912.905169392] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1795357912.905737047] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [lifecycle_manager-5]: process started with pid [50023]
+[lifecycle_manager-5] [INFO] [1795357920.900593966] [lifecycle_manager_dwa]: Creating
+[lifecycle_manager-5] [INFO] [1795357920.902642269] [lifecycle_manager_dwa]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-5] [INFO] [1795357920.906677630] [lifecycle_manager_dwa]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1795357920.906725055] [lifecycle_manager_dwa]: [34m[1mConfiguring map_server[0m[0m
+[map_server-1] [INFO] [1795357920.906993029] [map_server]: Configuring
+[map_server-1] [INFO] [1795357920.907073307] [map_io]: Loading yaml file: /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.yaml
+[map_server-1] [INFO] [1795357920.907277730] [map_io]: resolution: 0.05
+[map_server-1] [INFO] [1795357920.907282487] [map_io]: origin[0]: -5.53
+[map_server-1] [INFO] [1795357920.907284757] [map_io]: origin[1]: -6.45
+[map_server-1] [INFO] [1795357920.907287105] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1795357920.907289662] [map_io]: free_thresh: 0.196
+[map_server-1] [INFO] [1795357920.907292188] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1795357920.907294949] [map_io]: mode: trinary
+[map_server-1] [INFO] [1795357920.907298746] [map_io]: negate: 0
+[map_server-1] [INFO] [1795357920.907467630] [map_io]: Loading image_file: /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.pgm
+[map_server-1] [INFO] [1795357920.912011348] [map_io]: Read map /home/ibrahim/Desktop/convex/turtlebot3_house_slam/maps/turtlebot3_house.pgm: 300 X 214 map @ 0.05 m/cell
+[lifecycle_manager-5] [INFO] [1795357920.914621914] [lifecycle_manager_dwa]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1795357920.914770815] [amcl]: Configuring
+[amcl-2] [INFO] [1795357920.914846829] [amcl]: initTransforms
+[amcl-2] [INFO] [1795357920.918614227] [amcl]: initPubSub
+[amcl-2] [INFO] [1795357920.920276506] [amcl]: Subscribed to map topic.
+[lifecycle_manager-5] [INFO] [1795357920.921351702] [lifecycle_manager_dwa]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-3] [INFO] [1795357920.921460377] [planner_server]: Configuring
+[planner_server-3] [INFO] [1795357920.921481242] [global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1795357920.923835460] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1795357920.925525596] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-3] [INFO] [1795357920.926080788] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1795357920.926095357] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-3] [INFO] [1795357920.926325897] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1795357920.928271990] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-3] [INFO] [1795357920.928291756] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1795357920.928581310] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1795357920.932406306] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-3] [INFO] [1795357920.932454592] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1795357920.932695444] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-5] [INFO] [1795357920.937616443] [lifecycle_manager_dwa]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-4] [INFO] [1795357920.937825075] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1795357920.937985158] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1795357920.938083666] [controller_server]: Controller frequency set to 5.0000Hz
+[controller_server-4] [INFO] [1795357920.938130286] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1795357920.941864270] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-4] [INFO] [1795357920.943753776] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-4] [INFO] [1795357920.947355963] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-4] [INFO] [1795357920.947383613] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1795357920.947741192] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-4] [INFO] [1795357920.951202177] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1795357920.951511110] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1795357920.951606647] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1795357920.952354958] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-4] [INFO] [1795357920.952593572] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-4] [INFO] [1795357920.956316421] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-4] [INFO] [1795357920.956487616] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.956537995] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-4] [INFO] [1795357920.956657701] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.956687007] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-4] [INFO] [1795357920.956741533] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.956779883] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-4] [INFO] [1795357920.957103092] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.957173507] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-4] [INFO] [1795357920.957543232] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.957589416] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-4] [INFO] [1795357920.957857009] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.957901782] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-4] [INFO] [1795357920.958341422] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1795357920.958368534] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-5] [INFO] [1795357920.961266989] [lifecycle_manager_dwa]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1795357920.961338658] [map_server]: Activating
+[map_server-1] [INFO] [1795357920.961475885] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1795357920.961602687] [amcl]: Received a 300 X 214 map @ 0.050 m/pix
+[planner_server-3] [INFO] [1795357920.961626488] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 300 X 214 at 0.050000 m/pix
+[lifecycle_manager-5] [INFO] [1795357921.063280288] [lifecycle_manager_dwa]: Server map_server connected with bond.
+[lifecycle_manager-5] [INFO] [1795357921.063328720] [lifecycle_manager_dwa]: [34m[1mActivating amcl[0m[0m
+[amcl-2] [INFO] [1795357921.063560842] [amcl]: Activating
+[amcl-2] [INFO] [1795357921.063606447] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1795357921.063725847] [amcl]: Setting pose (1271.211000): 0.000 0.000 0.000
+[amcl-2] [INFO] [1795357921.064518161] [amcl]: Creating bond (amcl) to lifecycle manager.
+[amcl-2] [INFO] [1795357921.130261381] [amcl]: createLaserObject
+[lifecycle_manager-5] [INFO] [1795357921.167106311] [lifecycle_manager_dwa]: Server amcl connected with bond.
+[lifecycle_manager-5] [INFO] [1795357921.167139681] [lifecycle_manager_dwa]: [34m[1mActivating planner_server[0m[0m
+[planner_server-3] [INFO] [1795357921.167252127] [planner_server]: Activating
+[planner_server-3] [INFO] [1795357921.167279551] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1795357921.167286502] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1795357921.167325295] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 1271.260000, but only time 1272.200000 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1795357921.667375979] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1271.500000 but the earliest data is at time 1272.200000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1795357922.167396061] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1271.760000 but the earliest data is at time 1272.200000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1795357922.667424661] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1272.000000 but the earliest data is at time 1272.200000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-3] [INFO] [1795357923.167456673] [global_costmap.global_costmap]: start
+[planner_server-3] [INFO] [1795357924.217986392] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1795357924.218505403] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1795357924.320111980] [lifecycle_manager_dwa]: Server planner_server connected with bond.
+[lifecycle_manager-5] [INFO] [1795357924.320147895] [lifecycle_manager_dwa]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1795357924.320304263] [controller_server]: Activating
+[controller_server-4] [INFO] [1795357924.320331653] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1795357924.320339941] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1795357924.320422847] [local_costmap.local_costmap]: start
+[controller_server-4] [INFO] [1795357924.570984818] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1795357924.673487518] [lifecycle_manager_dwa]: Server controller_server connected with bond.
+[lifecycle_manager-5] [INFO] [1795357924.673545344] [lifecycle_manager_dwa]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1795357924.673558014] [lifecycle_manager_dwa]: [34m[1mCreating bond timer...[0m[0m
+[amcl-2] [INFO] [1795357931.446474222] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1795357931.446511485] [amcl]: Setting pose (1276.340000): 0.000 -0.000 0.000
+[controller_server-4] [INFO] [1795357933.449980972] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-3] [INFO] [1795357933.451552463] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-4] [INFO] [1795357935.497027549] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [ERROR] [1795357955.699938639] [controller_server]: Failed to make progress
+[controller_server-4] [WARN] [1795357955.700035547] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[amcl-2] [INFO] [1795357961.059710415] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1795357961.059840450] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1291.061000 but the latest data is at time 1291.060000, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1795357961.059857846] [amcl]: Setting pose (1291.061000): 0.000 0.000 0.000
+[controller_server-4] [INFO] [1795357963.064417030] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-3] [INFO] [1795357963.064991149] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-4] [INFO] [1795357965.074142372] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1795357972.084555395] [controller_server]: No valid trajectories out of 72! 
+[controller_server-4] [WARN] [1795358000.482226760] [controller_server]: No valid trajectories out of 66! 
+[controller_server-4] [ERROR] [1795358020.674731282] [controller_server]: Failed to make progress
+[controller_server-4] [WARN] [1795358020.674777646] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[amcl-2] [INFO] [1795358026.040294402] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1795358026.040347287] [amcl]: Setting pose (1323.460000): 0.000 0.000 0.000
+[controller_server-4] [INFO] [1795358028.042099152] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-3] [INFO] [1795358028.044386297] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[planner_server-3] [WARN] [1795358028.167595010] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[controller_server-4] [INFO] [1795358030.094898810] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1795358055.102637476] [controller_server]: No valid trajectories out of 66! 
+[controller_server-4] [WARN] [1795358070.902693931] [controller_server]: No valid trajectories out of 66! 
+[controller_server-4] [INFO] [1795358070.902772254] [controller_server]: Reached the goal!
+[controller_server-4] [INFO] [1795358074.234274881] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-4] [INFO] [1795358074.234328355] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[amcl-2] [INFO] [1795358074.234272146] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[amcl-2] [INFO] [1795358074.234346398] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[map_server-1] [INFO] [1795358074.234277389] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-1] [INFO] [1795358074.234344179] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[planner_server-3] [INFO] [1795358074.234276262] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-3] [INFO] [1795358074.234333679] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[lifecycle_manager-5] [INFO] [1795358074.234271838] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1795358074.234333845] [lifecycle_manager_dwa]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_dwa)
+[lifecycle_manager-5] [INFO] [1795358074.234363549] [lifecycle_manager_dwa]: [34m[1mTerminating bond timer...[0m[0m
+[controller_server-4] [INFO] [1795358074.234363142] [controller_server]: Deactivating
+[controller_server-4] [INFO] [1795358074.234386036] [local_costmap.local_costmap]: Deactivating
+[planner_server-3] [INFO] [1795358074.234367472] [planner_server]: Deactivating
+[planner_server-3] [INFO] [1795358074.234385382] [global_costmap.global_costmap]: Deactivating
+[map_server-1] [INFO] [1795358074.234377632] [map_server]: Deactivating
+[map_server-1] [INFO] [1795358074.234387877] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1795358074.234398016] [amcl]: Deactivating
+[amcl-2] [INFO] [1795358074.234415964] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[map_server-1] [INFO] [1795358074.244581915] [map_server]: Cleaning up
+[map_server-1] [INFO] [1795358074.244628887] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1795358074.244615458] [amcl]: Cleaning up
+[map_server-1] [INFO] [1795358074.248431530] [map_server]: Destroying
+[amcl-2] [INFO] [1795358074.249400127] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-2] [INFO] [1795358074.254190726] [amcl]: Destroying
+[lifecycle_manager-5] [INFO] [1795358074.279350664] [lifecycle_manager_dwa]: Destroying lifecycle_manager_dwa
+[controller_server-4] [INFO] [1795358074.320590665] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-4] [INFO] [1795358074.330705490] [controller_server]: Cleaning up
+[controller_server-4] [INFO] [1795358074.331166296] [local_costmap.local_costmap]: Cleaning up
+[controller_server-4] [INFO] [1795358074.335568256] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-4] [INFO] [1795358074.337392439] [local_costmap.local_costmap]: Destroying
+[controller_server-4] [INFO] [1795358074.340513222] [controller_server]: Destroying
+[INFO] [map_server-1]: process has finished cleanly [pid 49954]
+[INFO] [amcl-2]: process has finished cleanly [pid 49956]
+[INFO] [lifecycle_manager-5]: process has finished cleanly [pid 50023]
+[INFO] [controller_server-4]: process has finished cleanly [pid 49960]
+[planner_server-3] [INFO] [1795358075.167620113] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1795358075.167648845] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-3] [INFO] [1795358075.177765097] [planner_server]: Cleaning up
+[planner_server-3] [INFO] [1795358075.181085407] [global_costmap.global_costmap]: Cleaning up
+[planner_server-3] [INFO] [1795358075.182178445] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1795358075.182303456] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1795358075.185211550] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-3] [INFO] [1795358075.186473027] [global_costmap.global_costmap]: Destroying
+[planner_server-3] [INFO] [1795358075.188710265] [planner_server]: Destroying
+[INFO] [planner_server-3]: process has finished cleanly [pid 49958]

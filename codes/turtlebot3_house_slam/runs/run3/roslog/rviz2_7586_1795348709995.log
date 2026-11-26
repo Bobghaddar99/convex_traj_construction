@@ -1,0 +1,37 @@
+[INFO] [1795348710.204324003] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795348710.204385743] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1795348710.254704697] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1795348713.949361755] [rviz2]: Trying to create a map of size 119 x 39 using 1 swatches
+[ERROR] [1795348714.019036110] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1795348726.647300881] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1795348743.951385212] [rviz2]: Trying to create a map of size 120 x 51 using 1 swatches
+[INFO] [1795348745.964809911] [rviz2]: Trying to create a map of size 120 x 56 using 1 swatches
+[INFO] [1795348747.948699648] [rviz2]: Trying to create a map of size 120 x 64 using 1 swatches
+[INFO] [1795348749.965770862] [rviz2]: Trying to create a map of size 120 x 73 using 1 swatches
+[INFO] [1795348751.953089436] [rviz2]: Trying to create a map of size 120 x 75 using 1 swatches
+[INFO] [1795348769.965474854] [rviz2]: Trying to create a map of size 134 x 76 using 1 swatches
+[INFO] [1795348771.949061404] [rviz2]: Trying to create a map of size 140 x 76 using 1 swatches
+[INFO] [1795348773.965124403] [rviz2]: Trying to create a map of size 152 x 76 using 1 swatches
+[INFO] [1795348775.947673693] [rviz2]: Trying to create a map of size 155 x 95 using 1 swatches
+[INFO] [1795348777.967619544] [rviz2]: Trying to create a map of size 166 x 95 using 1 swatches
+[INFO] [1795348779.949045148] [rviz2]: Trying to create a map of size 174 x 95 using 1 swatches
+[INFO] [1795348781.967597343] [rviz2]: Trying to create a map of size 178 x 96 using 1 swatches
+[INFO] [1795348783.950656934] [rviz2]: Trying to create a map of size 186 x 96 using 1 swatches
+[INFO] [1795348785.965428328] [rviz2]: Trying to create a map of size 197 x 96 using 1 swatches
+[INFO] [1795348787.951028583] [rviz2]: Trying to create a map of size 202 x 96 using 1 swatches
+[INFO] [1795348795.949662773] [rviz2]: Trying to create a map of size 202 x 120 using 1 swatches
+[INFO] [1795348805.965192712] [rviz2]: Trying to create a map of size 202 x 135 using 1 swatches
+[INFO] [1795348807.952539164] [rviz2]: Trying to create a map of size 202 x 138 using 1 swatches
+[INFO] [1795348809.968005517] [rviz2]: Trying to create a map of size 202 x 152 using 1 swatches
+[INFO] [1795348835.950047143] [rviz2]: Trying to create a map of size 202 x 178 using 1 swatches
+[INFO] [1795348839.953923759] [rviz2]: Trying to create a map of size 243 x 186 using 1 swatches
+[INFO] [1795348843.954879511] [rviz2]: Trying to create a map of size 243 x 187 using 1 swatches
+[INFO] [1795348845.967886635] [rviz2]: Trying to create a map of size 244 x 187 using 1 swatches
+[INFO] [1795348879.951041983] [rviz2]: Trying to create a map of size 244 x 188 using 1 swatches
+[INFO] [1795348881.969021644] [rviz2]: Trying to create a map of size 245 x 188 using 1 swatches
+[INFO] [1795348885.969653008] [rviz2]: Trying to create a map of size 244 x 190 using 1 swatches
+[INFO] [1795348887.949826872] [rviz2]: Trying to create a map of size 245 x 190 using 1 swatches
+[INFO] [1795348893.970478602] [rviz2]: Trying to create a map of size 246 x 190 using 1 swatches
+[INFO] [1795348897.965806665] [rviz2]: Trying to create a map of size 247 x 190 using 1 swatches
+[INFO] [1795348903.952893094] [rviz2]: Trying to create a map of size 248 x 190 using 1 swatches
