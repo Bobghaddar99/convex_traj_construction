@@ -1,0 +1,3 @@
+
+# ROS bag databases
+codes/turtlebot3_house_slam/runs/**/bag/*.db3
